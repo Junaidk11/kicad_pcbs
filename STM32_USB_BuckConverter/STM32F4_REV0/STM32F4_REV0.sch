@@ -1243,4 +1243,98 @@ Wire Wire Line
 	4350 7500 4350 7200
 Text Notes 4550 7400 0    25   ~ 0
 Pull-up resistors for I2C pins. \nThe resistor values are usually recommended\nin the I2C specification. But, for a fast mode I2C (400KHz), \n2.2Kohm resistors are sufficient. 
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 6087753B
+P 6450 3600
+F 0 "J?" H 6550 3600 50  0000 L CNN
+F 1 "Conn_01x04" H 6550 3500 50  0000 L CNN
+F 2 "" H 6450 3600 50  0001 C CNN
+F 3 "~" H 6450 3600 50  0001 C CNN
+	1    6450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6087805C
+P 6200 3450
+F 0 "#PWR?" H 6200 3300 50  0001 C CNN
+F 1 "+3V3" H 6200 3600 50  0000 C CNN
+F 2 "" H 6200 3450 50  0001 C CNN
+F 3 "" H 6200 3450 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608789B9
+P 6200 3850
+F 0 "#PWR?" H 6200 3600 50  0001 C CNN
+F 1 "GND" H 6200 3700 50  0000 C CNN
+F 2 "" H 6200 3850 50  0001 C CNN
+F 3 "" H 6200 3850 50  0001 C CNN
+	1    6200 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3800 6200 3800
+Wire Wire Line
+	6200 3800 6200 3850
+Wire Wire Line
+	6200 3450 6200 3500
+Wire Wire Line
+	6200 3500 6250 3500
+Text GLabel 6250 3700 0    25   Input ~ 0
+I2C1_SCL
+Text GLabel 6250 3600 0    25   Input ~ 0
+I2C1_SDA
+Text Notes 6300 4150 0    25   ~ 0
+I2C Connector
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 6089BD8D
+P 7750 3600
+F 0 "J?" H 7850 3600 50  0000 L CNN
+F 1 "Conn_01x04" H 7850 3500 50  0000 L CNN
+F 2 "" H 7750 3600 50  0001 C CNN
+F 3 "~" H 7750 3600 50  0001 C CNN
+	1    7750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6089D097
+P 7500 3450
+F 0 "#PWR?" H 7500 3300 50  0001 C CNN
+F 1 "+3V3" H 7500 3600 50  0000 C CNN
+F 2 "" H 7500 3450 50  0001 C CNN
+F 3 "" H 7500 3450 50  0001 C CNN
+	1    7500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6089DB8B
+P 7500 3850
+F 0 "#PWR?" H 7500 3600 50  0001 C CNN
+F 1 "GND" H 7500 3700 50  0000 C CNN
+F 2 "" H 7500 3850 50  0001 C CNN
+F 3 "" H 7500 3850 50  0001 C CNN
+	1    7500 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3450 7500 3500
+Wire Wire Line
+	7500 3500 7550 3500
+Wire Wire Line
+	7500 3850 7500 3800
+Wire Wire Line
+	7500 3800 7550 3800
+Text GLabel 7550 3600 0    25   Input ~ 0
+USART3_TX
+Text GLabel 7550 3700 0    25   Input ~ 0
+USART3_RX
+Text Notes 7650 4150 0    25   ~ 0
+UART Connector\n\n
 $EndSCHEMATC
