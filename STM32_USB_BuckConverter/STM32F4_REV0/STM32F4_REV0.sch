@@ -714,63 +714,11 @@ F 3 "" H 6650 550 500 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
-U 1 1 6070A53E
-P 1250 1000
-F 0 "#PWR?" H 1250 850 50  0001 C CNN
-F 1 "+12V" H 1250 1150 50  0000 C CNN
-F 2 "" H 1250 1000 50  0001 C CNN
-F 3 "" H 1250 1000 50  0001 C CNN
-	1    1250 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Polyfuse_Small F?
-U 1 1 6070BEAF
-P 1550 1050
-F 0 "F?" V 1650 1050 50  0000 C CNN
-F 1 "250mA" V 1450 1050 50  0000 C CNN
-F 2 "" H 1600 850 50  0001 L CNN
-F 3 "~" H 1550 1050 50  0001 C CNN
-	1    1550 1050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60714FBD
-P 1950 1450
-F 0 "#PWR?" H 1950 1200 50  0001 C CNN
-F 1 "GND" H 1950 1300 50  0000 C CNN
-F 2 "" H 1950 1450 50  0001 C CNN
-F 3 "" H 1950 1450 50  0001 C CNN
-	1    1950 1450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 1350 1950 1450
-Wire Wire Line
-	1650 1050 1750 1050
-Text Notes 950  1900 0    25   ~ 0
-The 12V is fused and AO3401A is a \np-channel mosfet, is a low-power lost \nsolution to reverse polarity check. \n\nYou can achieve reverse polarity protection \nwith a diode, a schottky diode, but \nthis has a large power loss in comparison to \nthe p-channel mosfet solution. \n\nThe Ferret Bead essentially is \na resistor at High Frequency, \n(you can think of it as an Inductor). \n\nThe Ferret bead is added for \naddition power supply filtering. \n
-Wire Wire Line
-	2350 1050 2150 1050
-$Comp
-L Transistor_FET:AO3401A Q?
-U 1 1 6070E341
-P 1950 1150
-F 0 "Q?" V 2350 1150 50  0000 C CNN
-F 1 "AO3401A" V 2250 1150 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2150 1075 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 1950 1150 50  0001 L CNN
-	1    1950 1150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:Ferrite_Bead_Small FB?
 U 1 1 607283EA
 P 2450 1050
-F 0 "FB?" V 2700 1050 50  0000 C CNN
-F 1 "600 @ 600MHz" V 2600 1050 50  0000 C CNN
+F 0 "FB?" V 2600 1050 50  0000 C CNN
+F 1 "600 @ 600MHz" V 2350 1000 25  0000 C CNN
 F 2 "" V 2380 1050 50  0001 C CNN
 F 3 "~" H 2450 1050 50  0001 C CNN
 	1    2450 1050
@@ -779,38 +727,36 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 607304BE
-P 2650 1250
-F 0 "C?" H 2800 1350 50  0000 L CNN
-F 1 "10u" H 2800 1250 50  0000 L CNN
-F 2 "" H 2650 1250 50  0001 C CNN
-F 3 "~" H 2650 1250 50  0001 C CNN
-	1    2650 1250
+P 3000 1250
+F 0 "C?" H 3150 1350 50  0000 L CNN
+F 1 "10u" H 3150 1250 50  0000 L CNN
+F 2 "" H 3000 1250 50  0001 C CNN
+F 3 "~" H 3000 1250 50  0001 C CNN
+	1    3000 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 1050 2650 1050
-Wire Wire Line
-	2650 1050 2650 1150
+	3000 1050 3000 1150
 $Comp
 L power:GND #PWR?
 U 1 1 60733C86
-P 2650 1450
-F 0 "#PWR?" H 2650 1200 50  0001 C CNN
-F 1 "GND" H 2650 1300 50  0000 C CNN
-F 2 "" H 2650 1450 50  0001 C CNN
-F 3 "" H 2650 1450 50  0001 C CNN
-	1    2650 1450
+P 3000 1450
+F 0 "#PWR?" H 3000 1200 50  0001 C CNN
+F 1 "GND" H 3000 1300 50  0000 C CNN
+F 2 "" H 3000 1450 50  0001 C CNN
+F 3 "" H 3000 1450 50  0001 C CNN
+	1    3000 1450
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 1350 2650 1450
-Text Notes 2250 1900 0    25   ~ 0
+	3000 1350 3000 1450
+Text Notes 2600 1900 0    25   ~ 0
 The 10uF capacitor is a bulk \ninput decoupling capacitor, as \nper the datasheet recommendation of \nof the Buck Converter MP2359DJ-LF-Z
-Text GLabel 2900 1050 2    25   Input ~ 0
+Text GLabel 3250 1050 2    25   Input ~ 0
 BUCK_IN
 Wire Wire Line
-	2900 1050 2650 1050
-Connection ~ 2650 1050
+	3250 1050 3000 1050
+Connection ~ 3000 1050
 $Comp
 L Device:R_Small R?
 U 1 1 6074641D
@@ -1071,12 +1017,8 @@ Text Notes 10400 1450 0    25   ~ 0
 The feedback voltage is governed by \nthe resistors R1 and R2 - the datasheet. \n\nWe need 3.3V on the output, use the \ndatasheet equation to get the resistor \nratio. Using standard resistors to \nachieve the ratio calculated.
 Wire Notes Line
 	450  2000 11250 2000
-Text Notes 550  600  0    60   ~ 0
+Text Notes 5550 600  0    60   ~ 0
 Power Circuitry: 12V/3.3V Buck Converter 
-Wire Wire Line
-	1250 1000 1250 1050
-Wire Wire Line
-	1250 1050 1450 1050
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 6080669D
@@ -1337,4 +1279,148 @@ Text GLabel 7550 3700 0    25   Input ~ 0
 USART3_RX
 Text Notes 7650 4150 0    25   ~ 0
 UART Connector\n\n
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 608B3BCC
+P 6400 5050
+F 0 "J?" H 6400 5550 50  0000 C CNN
+F 1 "USB_B_Micro" H 6400 5450 50  0000 C CNN
+F 2 "" H 6550 5000 50  0001 C CNN
+F 3 "~" H 6550 5000 50  0001 C CNN
+	1    6400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608B6CA0
+P 6400 5550
+F 0 "#PWR?" H 6400 5300 50  0001 C CNN
+F 1 "GND" H 6400 5400 50  0000 C CNN
+F 2 "" H 6400 5550 50  0001 C CNN
+F 3 "" H 6400 5550 50  0001 C CNN
+	1    6400 5550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5550 6400 5450
+NoConn ~ 6300 5450
+Text Notes 5950 6150 0    25   ~ 0
+JLCPCB doesn’t do through hole, \nwill have to solder this. \n\nThe Shield pin is can be left floating, \nas long as you’re not using any \nkind of metallic enclosure.  If you were, \nthen you would connect a resistor\nand capacitor to ground - read up on it if needed.  
+$Comp
+L Power_Protection:USBLC6-2SC6 U?
+U 1 1 608C7806
+P 8300 5200
+F 0 "U?" H 8300 5800 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 8300 5700 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8300 4700 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 8500 5550 50  0001 C CNN
+	1    8300 5200
+	1    0    0    -1  
+$EndComp
+Text Notes 7850 5900 0    25   ~ 0
+This is a collection of tvs diodes \nthat provide ESD protection, this component is designed for USBs. \nThe USB will be connected and disconnected several times, \nthe electrostatic\ncharge on the human can flow through the usb connector, \nso to protect the circuit, you use tvs diodes. \n
+$Comp
+L power:+5V #PWR?
+U 1 1 608CBD21
+P 6750 4800
+F 0 "#PWR?" H 6750 4650 50  0001 C CNN
+F 1 "+5V" H 6800 5000 50  0000 C CNN
+F 2 "" H 6750 4800 50  0001 C CNN
+F 3 "" H 6750 4800 50  0001 C CNN
+	1    6750 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4800 6750 4850
+Wire Wire Line
+	6750 4850 6700 4850
+Wire Wire Line
+	900  1050 1100 1050
+Wire Wire Line
+	900  1000 900  1050
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 6070E341
+P 1600 1150
+F 0 "Q?" V 2000 1150 50  0000 C CNN
+F 1 "AO3401A" V 1900 1150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1800 1075 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 1600 1150 50  0001 L CNN
+	1    1600 1150
+	0    -1   -1   0   
+$EndComp
+Text Notes 600  1900 0    25   ~ 0
+The 12V is fused and AO3401A is a \np-channel mosfet, is a low-power lost \nsolution to reverse polarity check. \n\nYou can achieve reverse polarity protection \nwith a diode, a schottky diode, but \nthis has a large power loss in comparison to \nthe p-channel mosfet solution. \n\nThe Ferret Bead essentially is \na resistor at High Frequency, \n(you can think of it as an Inductor). \n\nThe Ferret bead is added for \naddition power supply filtering. \n
+Wire Wire Line
+	1300 1050 1400 1050
+Wire Wire Line
+	1600 1350 1600 1450
+$Comp
+L power:GND #PWR?
+U 1 1 60714FBD
+P 1600 1450
+F 0 "#PWR?" H 1600 1200 50  0001 C CNN
+F 1 "GND" H 1600 1300 50  0000 C CNN
+F 2 "" H 1600 1450 50  0001 C CNN
+F 3 "" H 1600 1450 50  0001 C CNN
+	1    1600 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 6070BEAF
+P 1200 1050
+F 0 "F?" V 1300 1050 50  0000 C CNN
+F 1 "250mA" V 1100 1050 50  0000 C CNN
+F 2 "" H 1250 850 50  0001 L CNN
+F 3 "~" H 1200 1050 50  0001 C CNN
+	1    1200 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 6070A53E
+P 900 1000
+F 0 "#PWR?" H 900 850 50  0001 C CNN
+F 1 "+12V" H 900 1150 50  0000 C CNN
+F 2 "" H 900 1000 50  0001 C CNN
+F 3 "" H 900 1000 50  0001 C CNN
+	1    900  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_Small D?
+U 1 1 608E7448
+P 1950 850
+F 0 "D?" V 2000 650 50  0000 L CNN
+F 1 "B5819W" V 1900 500 50  0000 L CNN
+F 2 "" V 1950 850 50  0001 C CNN
+F 3 "~" V 1950 850 50  0001 C CNN
+	1    1950 850 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 1050 3000 1050
+Wire Wire Line
+	1950 950  1950 1050
+Wire Wire Line
+	1950 1050 1800 1050
+Wire Wire Line
+	1950 1050 2350 1050
+Connection ~ 1950 1050
+$Comp
+L power:+5V #PWR?
+U 1 1 6090AF68
+P 1950 700
+F 0 "#PWR?" H 1950 550 50  0001 C CNN
+F 1 "+5V" H 1950 850 50  0000 C CNN
+F 2 "" H 1950 700 50  0001 C CNN
+F 3 "" H 1950 700 50  0001 C CNN
+	1    1950 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 700  1950 750 
+Text Notes 1800 1750 0    25   ~ 0
+The schottky diode here allows the board, \nto be either powered by the USB cable or \nthe 12V supply. \nBasically, acts as an OR gate, \nif the 12V is connected, then this diode\nwill be reverse biased, meaning the 12V is supplying\nthe baord. If 12V not present, then this diode is \nforward biased, i.e. USB is powering the board. \n\nProtects the board in case when both 12V \nand the USB is connected. 
 $EndSCHEMATC
