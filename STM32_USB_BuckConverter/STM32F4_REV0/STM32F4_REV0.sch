@@ -679,135 +679,135 @@ Wire Wire Line
 	900  6050 950  6050
 Text Notes 500  7200 0    20   ~ 0
 A blue LED typically has a forward voltage drop of 3V. \nThe I/O pin will supply 3.3V, 3.0V will drop across the led, \nusing remaining 0.3V we can calculate the limiting resistor \nbased on how much current we want to supply for the LED.
-Text GLabel 5000 1050 0    25   Input ~ 0
+Text GLabel 5300 1000 0    25   Input ~ 0
 BUCK_IN
-Text GLabel 5000 1200 0    25   Input ~ 0
+Text GLabel 5300 1150 0    25   Input ~ 0
 BUCK_EN
-Text GLabel 5700 1050 2    25   Input ~ 0
+Text GLabel 6000 1000 2    25   Input ~ 0
 BUCK_BST
-Text GLabel 5700 1200 2    25   Input ~ 0
+Text GLabel 6000 1150 2    25   Input ~ 0
 BUCK_SW
-Text GLabel 5700 1350 2    25   Input ~ 0
+Text GLabel 6000 1300 2    25   Input ~ 0
 BUCK_FB
 $Comp
 L power:GND #PWR?
 U 1 1 60706D9C
-P 5350 1750
-F 0 "#PWR?" H 5350 1500 50  0001 C CNN
-F 1 "GND" H 5350 1600 50  0000 C CNN
-F 2 "" H 5350 1750 50  0001 C CNN
-F 3 "" H 5350 1750 50  0001 C CNN
-	1    5350 1750
+P 5650 1700
+F 0 "#PWR?" H 5650 1450 50  0001 C CNN
+F 1 "GND" H 5650 1550 50  0000 C CNN
+F 2 "" H 5650 1700 50  0001 C CNN
+F 3 "" H 5650 1700 50  0001 C CNN
+	1    5650 1700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 1750 5350 1700
+	5650 1700 5650 1650
 $Comp
 L JunaidKhanKiCADLibrary:MP2359DJ-LF-Z U?
 U 1 1 60703211
-P 5900 600
-F 0 "U?" H 5350 450 50  0000 C CNN
-F 1 "MP2359DJ-LF-Z" H 5350 350 50  0000 C CNN
-F 2 "" H 6650 550 500 0001 C CNN
-F 3 "" H 6650 550 500 0001 C CNN
-	1    5900 600 
+P 6200 550
+F 0 "U?" H 5650 400 50  0000 C CNN
+F 1 "MP2359DJ-LF-Z" H 5650 300 50  0000 C CNN
+F 2 "" H 6950 500 500 0001 C CNN
+F 3 "" H 6950 500 500 0001 C CNN
+	1    6200 550 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB?
 U 1 1 607283EA
-P 2450 1050
-F 0 "FB?" V 2600 1050 50  0000 C CNN
-F 1 "600 @ 600MHz" V 2350 1000 25  0000 C CNN
-F 2 "" V 2380 1050 50  0001 C CNN
-F 3 "~" H 2450 1050 50  0001 C CNN
-	1    2450 1050
+P 2850 1050
+F 0 "FB?" V 3000 1050 50  0000 C CNN
+F 1 "600 @ 600MHz" V 2750 1000 25  0000 C CNN
+F 2 "" V 2780 1050 50  0001 C CNN
+F 3 "~" H 2850 1050 50  0001 C CNN
+	1    2850 1050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 607304BE
-P 3000 1250
-F 0 "C?" H 3150 1350 50  0000 L CNN
-F 1 "10u" H 3150 1250 50  0000 L CNN
-F 2 "" H 3000 1250 50  0001 C CNN
-F 3 "~" H 3000 1250 50  0001 C CNN
-	1    3000 1250
+P 3400 1250
+F 0 "C?" H 3550 1350 50  0000 L CNN
+F 1 "10u" H 3550 1250 50  0000 L CNN
+F 2 "" H 3400 1250 50  0001 C CNN
+F 3 "~" H 3400 1250 50  0001 C CNN
+	1    3400 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 1050 3000 1150
+	3400 1050 3400 1150
 $Comp
 L power:GND #PWR?
 U 1 1 60733C86
-P 3000 1450
-F 0 "#PWR?" H 3000 1200 50  0001 C CNN
-F 1 "GND" H 3000 1300 50  0000 C CNN
-F 2 "" H 3000 1450 50  0001 C CNN
-F 3 "" H 3000 1450 50  0001 C CNN
-	1    3000 1450
+P 3400 1450
+F 0 "#PWR?" H 3400 1200 50  0001 C CNN
+F 1 "GND" H 3400 1300 50  0000 C CNN
+F 2 "" H 3400 1450 50  0001 C CNN
+F 3 "" H 3400 1450 50  0001 C CNN
+	1    3400 1450
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 1350 3000 1450
-Text Notes 2600 1900 0    25   ~ 0
+	3400 1350 3400 1450
+Text Notes 3000 1900 0    25   ~ 0
 The 10uF capacitor is a bulk \ninput decoupling capacitor, as \nper the datasheet recommendation of \nof the Buck Converter MP2359DJ-LF-Z
-Text GLabel 3250 1050 2    25   Input ~ 0
+Text GLabel 3650 1050 2    25   Input ~ 0
 BUCK_IN
 Wire Wire Line
-	3250 1050 3000 1050
-Connection ~ 3000 1050
+	3650 1050 3400 1050
+Connection ~ 3400 1050
 $Comp
 L Device:R_Small R?
 U 1 1 6074641D
-P 3900 900
-F 0 "R?" H 3800 850 50  0000 R CNN
-F 1 "100k" H 3800 950 50  0000 R CNN
-F 2 "" H 3900 900 50  0001 C CNN
-F 3 "~" H 3900 900 50  0001 C CNN
-	1    3900 900 
+P 4400 850
+F 0 "R?" H 4300 800 50  0000 R CNN
+F 1 "100k" H 4300 900 50  0000 R CNN
+F 2 "" H 4400 850 50  0001 C CNN
+F 3 "~" H 4400 850 50  0001 C CNN
+	1    4400 850 
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 60746A3A
-P 3900 1200
-F 0 "R?" H 3800 1150 50  0000 R CNN
-F 1 "68k" H 3800 1250 50  0000 R CNN
-F 2 "" H 3900 1200 50  0001 C CNN
-F 3 "~" H 3900 1200 50  0001 C CNN
-	1    3900 1200
+P 4400 1150
+F 0 "R?" H 4300 1100 50  0000 R CNN
+F 1 "68k" H 4300 1200 50  0000 R CNN
+F 2 "" H 4400 1150 50  0001 C CNN
+F 3 "~" H 4400 1150 50  0001 C CNN
+	1    4400 1150
 	-1   0    0    1   
 $EndComp
-Text GLabel 3600 650  0    25   Input ~ 0
+Text GLabel 4100 600  0    25   Input ~ 0
 BUCK_IN
 Wire Wire Line
-	3600 650  3900 650 
+	4100 600  4400 600 
 Wire Wire Line
-	3900 650  3900 800 
+	4400 600  4400 750 
 $Comp
 L power:GND #PWR?
 U 1 1 6074CAF7
-P 3900 1400
-F 0 "#PWR?" H 3900 1150 50  0001 C CNN
-F 1 "GND" H 3900 1250 50  0000 C CNN
-F 2 "" H 3900 1400 50  0001 C CNN
-F 3 "" H 3900 1400 50  0001 C CNN
-	1    3900 1400
+P 4400 1350
+F 0 "#PWR?" H 4400 1100 50  0001 C CNN
+F 1 "GND" H 4400 1200 50  0000 C CNN
+F 2 "" H 4400 1350 50  0001 C CNN
+F 3 "" H 4400 1350 50  0001 C CNN
+	1    4400 1350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 1000 3900 1050
+	4400 950  4400 1000
 Wire Wire Line
-	3900 1300 3900 1400
-Text GLabel 4300 1050 2    25   Input ~ 0
+	4400 1250 4400 1350
+Text GLabel 4800 1000 2    25   Input ~ 0
 BUCK_EN
 Wire Wire Line
-	4300 1050 3900 1050
-Connection ~ 3900 1050
+	4800 1000 4400 1000
+Connection ~ 4400 1000
 Wire Wire Line
-	3900 1050 3900 1100
-Text Notes 3650 1900 0    25   ~ 0
+	4400 1000 4400 1050
+Text Notes 4150 1850 0    25   ~ 0
 The enable pin requires a min of 1.2V to turn on. \nThe enable pin will fry if the voltage is greater \nthan 6V, can’t feed the 12V BUCK_IN. \nSo, the voltage divider ensures the voltage \nafter 100k resistor is less than 6V, protecting \nthe pin as well as providing above min needed. 
 $Comp
 L Device:C_Small C?
@@ -1309,22 +1309,22 @@ JLCPCB doesn’t do through hole, \nwill have to solder this. \n\nThe Shield pin
 $Comp
 L Power_Protection:USBLC6-2SC6 U?
 U 1 1 608C7806
-P 8300 5200
-F 0 "U?" H 8300 5800 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 8300 5700 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8300 4700 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 8500 5550 50  0001 C CNN
-	1    8300 5200
+P 8250 5100
+F 0 "U?" H 8500 5450 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 8550 4750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8250 4600 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 8450 5450 50  0001 C CNN
+	1    8250 5100
 	1    0    0    -1  
 $EndComp
-Text Notes 7850 5900 0    25   ~ 0
+Text Notes 7850 6150 0    25   ~ 0
 This is a collection of tvs diodes \nthat provide ESD protection, this component is designed for USBs. \nThe USB will be connected and disconnected several times, \nthe electrostatic\ncharge on the human can flow through the usb connector, \nso to protect the circuit, you use tvs diodes. \n
 $Comp
 L power:+5V #PWR?
 U 1 1 608CBD21
 P 6750 4800
 F 0 "#PWR?" H 6750 4650 50  0001 C CNN
-F 1 "+5V" H 6800 5000 50  0000 C CNN
+F 1 "+5V" H 6750 4950 50  0000 C CNN
 F 2 "" H 6750 4800 50  0001 C CNN
 F 3 "" H 6750 4800 50  0001 C CNN
 	1    6750 4800
@@ -1391,36 +1391,77 @@ $EndComp
 $Comp
 L Device:D_Schottky_Small D?
 U 1 1 608E7448
-P 1950 850
-F 0 "D?" V 2000 650 50  0000 L CNN
-F 1 "B5819W" V 1900 500 50  0000 L CNN
-F 2 "" V 1950 850 50  0001 C CNN
-F 3 "~" V 1950 850 50  0001 C CNN
-	1    1950 850 
+P 2250 850
+F 0 "D?" V 2300 650 50  0000 L CNN
+F 1 "B5819W" V 2200 500 50  0000 L CNN
+F 2 "" V 2250 850 50  0001 C CNN
+F 3 "~" V 2250 850 50  0001 C CNN
+	1    2250 850 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2550 1050 3000 1050
+	2950 1050 3400 1050
 Wire Wire Line
-	1950 950  1950 1050
-Wire Wire Line
-	1950 1050 1800 1050
-Wire Wire Line
-	1950 1050 2350 1050
-Connection ~ 1950 1050
+	2250 950  2250 1050
 $Comp
 L power:+5V #PWR?
 U 1 1 6090AF68
-P 1950 700
-F 0 "#PWR?" H 1950 550 50  0001 C CNN
-F 1 "+5V" H 1950 850 50  0000 C CNN
-F 2 "" H 1950 700 50  0001 C CNN
-F 3 "" H 1950 700 50  0001 C CNN
-	1    1950 700 
+P 2250 700
+F 0 "#PWR?" H 2250 550 50  0001 C CNN
+F 1 "+5V" H 2250 850 50  0000 C CNN
+F 2 "" H 2250 700 50  0001 C CNN
+F 3 "" H 2250 700 50  0001 C CNN
+	1    2250 700 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 700  1950 750 
+	2250 700  2250 750 
 Text Notes 1800 1750 0    25   ~ 0
 The schottky diode here allows the board, \nto be either powered by the USB cable or \nthe 12V supply. \nBasically, acts as an OR gate, \nif the 12V is connected, then this diode\nwill be reverse biased, meaning the 12V is supplying\nthe baord. If 12V not present, then this diode is \nforward biased, i.e. USB is powering the board. \n\nProtects the board in case when both 12V \nand the USB is connected. 
+Wire Wire Line
+	1800 1050 2250 1050
+Wire Wire Line
+	2250 1050 2750 1050
+Connection ~ 2250 1050
+NoConn ~ 6700 5250
+Text Notes 6750 5300 0    25   ~ 0
+USB not being used as a HOST, \nso don’t need this ID pin. 
+Text GLabel 6700 5050 2    25   Input ~ 0
+USB_CONNECTOR_D+
+Text GLabel 6700 5150 2    25   Input ~ 0
+USB_CONNECTOR_D-
+$Comp
+L power:GND #PWR?
+U 1 1 60945D45
+P 8250 5600
+F 0 "#PWR?" H 8250 5350 50  0001 C CNN
+F 1 "GND" H 8250 5450 50  0000 C CNN
+F 2 "" H 8250 5600 50  0001 C CNN
+F 3 "" H 8250 5600 50  0001 C CNN
+	1    8250 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 5600 8250 5500
+$Comp
+L power:+5V #PWR?
+U 1 1 609625E7
+P 8250 4700
+F 0 "#PWR?" H 8250 4550 50  0001 C CNN
+F 1 "+5V" H 8250 4850 50  0000 C CNN
+F 2 "" H 8250 4700 50  0001 C CNN
+F 3 "" H 8250 4700 50  0001 C CNN
+	1    8250 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 7850 5200 0    25   Input ~ 0
+USB_CONNECTOR_D-
+Text GLabel 8650 5200 2    25   Input ~ 0
+USB_CONNECTOR_D+
+Text GLabel 7850 5000 0    25   Input ~ 0
+USB_D-
+Text GLabel 8650 5000 2    25   Input ~ 0
+USB_D+
+Text Notes 8900 6200 2    25   ~ 0
+Any discharge would be dissipated across the diodes. 
 $EndSCHEMATC
