@@ -514,98 +514,98 @@ Wire Wire Line
 $Comp
 L Device:Crystal_GND24_Small Y?
 U 1 1 6062C86D
-P 4400 5550
-F 0 "Y?" H 4350 5900 50  0000 L CNN
-F 1 "16MHz" H 4300 5800 50  0000 L CNN
-F 2 "" H 4400 5550 50  0001 C CNN
-F 3 "~" H 4400 5550 50  0001 C CNN
-	1    4400 5550
+P 4400 5300
+F 0 "Y?" H 4350 5650 50  0000 L CNN
+F 1 "16MHz" H 4300 5550 50  0000 L CNN
+F 2 "" H 4400 5300 50  0001 C CNN
+F 3 "~" H 4400 5300 50  0001 C CNN
+	1    4400 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 6062EA12
-P 4100 5800
-F 0 "C?" H 4200 5900 50  0000 L CNN
-F 1 "12p" H 4200 5800 50  0000 L CNN
-F 2 "" H 4100 5800 50  0001 C CNN
-F 3 "~" H 4100 5800 50  0001 C CNN
-	1    4100 5800
+P 4100 5550
+F 0 "C?" H 4200 5650 50  0000 L CNN
+F 1 "12p" H 4200 5550 50  0000 L CNN
+F 2 "" H 4100 5550 50  0001 C CNN
+F 3 "~" H 4100 5550 50  0001 C CNN
+	1    4100 5550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 5550 4300 5550
+	4100 5300 4300 5300
 Wire Wire Line
-	4500 5550 4700 5550
+	4500 5300 4700 5300
 Wire Wire Line
-	4700 5550 4700 5700
+	4700 5300 4700 5450
 $Comp
 L power:GND #PWR?
 U 1 1 60632B61
-P 4400 6000
-F 0 "#PWR?" H 4400 5750 50  0001 C CNN
-F 1 "GND" H 4400 5850 50  0000 C CNN
-F 2 "" H 4400 6000 50  0001 C CNN
-F 3 "" H 4400 6000 50  0001 C CNN
-	1    4400 6000
+P 4400 5750
+F 0 "#PWR?" H 4400 5500 50  0001 C CNN
+F 1 "GND" H 4400 5600 50  0000 C CNN
+F 2 "" H 4400 5750 50  0001 C CNN
+F 3 "" H 4400 5750 50  0001 C CNN
+	1    4400 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 5900 4100 6000
+	4100 5650 4100 5750
 Wire Wire Line
-	4100 6000 4400 6000
+	4100 5750 4400 5750
 Wire Wire Line
-	4400 6000 4700 6000
+	4400 5750 4700 5750
 Wire Wire Line
-	4700 6000 4700 5900
-Connection ~ 4400 6000
+	4700 5750 4700 5650
+Connection ~ 4400 5750
 Wire Wire Line
-	4400 5650 4400 6000
+	4400 5400 4400 5750
 $Comp
 L power:GND #PWR?
 U 1 1 60637BC4
-P 3650 5400
-F 0 "#PWR?" H 3650 5150 50  0001 C CNN
-F 1 "GND" H 3650 5250 50  0000 C CNN
-F 2 "" H 3650 5400 50  0001 C CNN
-F 3 "" H 3650 5400 50  0001 C CNN
-	1    3650 5400
+P 3650 5150
+F 0 "#PWR?" H 3650 4900 50  0001 C CNN
+F 1 "GND" H 3650 5000 50  0000 C CNN
+F 2 "" H 3650 5150 50  0001 C CNN
+F 3 "" H 3650 5150 50  0001 C CNN
+	1    3650 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 5400 4400 5450
+	4400 5150 4400 5200
 $Comp
 L Device:R_Small R?
 U 1 1 6063C414
-P 4700 5300
-F 0 "R?" H 4800 5350 50  0000 L CNN
-F 1 "47" H 4800 5250 50  0000 L CNN
-F 2 "" H 4700 5300 50  0001 C CNN
-F 3 "~" H 4700 5300 50  0001 C CNN
-	1    4700 5300
+P 4700 5050
+F 0 "R?" H 4800 5100 50  0000 L CNN
+F 1 "47" H 4800 5000 50  0000 L CNN
+F 2 "" H 4700 5050 50  0001 C CNN
+F 3 "~" H 4700 5050 50  0001 C CNN
+	1    4700 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 5400 4700 5550
-Connection ~ 4700 5550
-Text GLabel 4000 5550 0    25   Input ~ 0
+	4700 5150 4700 5300
+Connection ~ 4700 5300
+Text GLabel 4000 5300 0    25   Input ~ 0
 HSE_IN
 Wire Wire Line
-	4100 5700 4100 5550
+	4100 5450 4100 5300
 Wire Wire Line
-	3650 5400 4400 5400
+	3650 5150 4400 5150
 Wire Wire Line
-	4000 5550 4100 5550
-Connection ~ 4100 5550
-Text GLabel 4650 5050 0    25   Input ~ 0
+	4000 5300 4100 5300
+Connection ~ 4100 5300
+Text GLabel 4650 4800 0    25   Input ~ 0
 HSE_OUT
 Wire Wire Line
-	4650 5050 4700 5050
+	4650 4800 4700 4800
 Wire Wire Line
-	4700 5050 4700 5200
-Text Notes 5150 6300 2    25   ~ 0
+	4700 4800 4700 4950
+Text Notes 5150 6050 2    25   ~ 0
 Load_Capacitance = 2*(Crystal_Load_Capacitance - PCB_Stray_Capacitance)
-Text Notes 5250 6450 2    25   ~ 0
+Text Notes 5250 6200 2    25   ~ 0
 Crystal Load Capacitance can be found from Data sheet of the oscillator chosen. \n\nLoad capacitance is 12pF based on above equation. 
 Text Notes 3750 3800 0    25   ~ 0
 Using Software to control how the chip is booted up. \nCan boot via USB, UART or the debugger can overwrite the RAM.\nRead Datasheet of the MCU.
@@ -615,17 +615,17 @@ Text Notes 3300 2550 0    25   ~ 0
 The 3.3 Analog reference is derived from the 3.3V supplied to the chip. \nThe Inductor and capacitors are added to filter the 3.3V from the power supply. \nYou can change these based on how sensitive your application is. 
 Text Notes 1600 3900 2    25   ~ 0
 NRST allows hard reseting the\n chip by driving this pin low.
-Text Notes 3650 6800 0    25   ~ 0
+Text Notes 3650 6550 0    25   ~ 0
 The Feed Resistor allows limiting the oscillator drive input coming from the chip,\nallowing you to reduce the harmonics generated,  \nwhich results in less noise being generated. \n\nThe feed resistor is not always necessary, \nbut its included to reduce the noise. \nThe feed resistor calculated as 47 Ohms - Read ST Oscillator Design application note - AN2867
 $Comp
 L Device:C_Small C?
 U 1 1 6062DC99
-P 4700 5800
-F 0 "C?" H 4800 5900 50  0000 L CNN
-F 1 "12p" H 4800 5800 50  0000 L CNN
-F 2 "" H 4700 5800 50  0001 C CNN
-F 3 "~" H 4700 5800 50  0001 C CNN
-	1    4700 5800
+P 4700 5550
+F 0 "C?" H 4800 5650 50  0000 L CNN
+F 1 "12p" H 4800 5550 50  0000 L CNN
+F 2 "" H 4700 5550 50  0001 C CNN
+F 3 "~" H 4700 5550 50  0001 C CNN
+	1    4700 5550
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1181,4 +1181,66 @@ SWO
 Text GLabel 8650 2750 2    25   Input ~ 0
 NRST
 NoConn ~ 8650 2650
+$Comp
+L Device:R_Small R?
+U 1 1 6085E3D5
+P 4050 7100
+F 0 "R?" H 3950 7050 50  0000 C CNN
+F 1 "2k2" H 3950 7150 50  0000 C CNN
+F 2 "" H 4050 7100 50  0001 C CNN
+F 3 "~" H 4050 7100 50  0001 C CNN
+	1    4050 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6085E794
+P 4350 7100
+F 0 "R?" H 4250 7050 50  0000 C CNN
+F 1 "2k2" H 4250 7150 50  0000 C CNN
+F 2 "" H 4350 7100 50  0001 C CNN
+F 3 "~" H 4350 7100 50  0001 C CNN
+	1    4350 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6085E9D1
+P 4050 6850
+F 0 "#PWR?" H 4050 6700 50  0001 C CNN
+F 1 "+3V3" H 4050 7000 50  0000 C CNN
+F 2 "" H 4050 6850 50  0001 C CNN
+F 3 "" H 4050 6850 50  0001 C CNN
+	1    4050 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6085EFB9
+P 4350 6850
+F 0 "#PWR?" H 4350 6700 50  0001 C CNN
+F 1 "+3V3" H 4350 7000 50  0000 C CNN
+F 2 "" H 4350 6850 50  0001 C CNN
+F 3 "" H 4350 6850 50  0001 C CNN
+	1    4350 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6850 4050 7000
+Wire Wire Line
+	4350 6850 4350 7000
+Text GLabel 3850 7500 0    25   Input ~ 0
+I2C1_SCL
+Text GLabel 3950 7350 0    25   Input ~ 0
+I2C1_SDA
+Wire Wire Line
+	3950 7350 4050 7350
+Wire Wire Line
+	4050 7350 4050 7200
+Wire Wire Line
+	3850 7500 4350 7500
+Wire Wire Line
+	4350 7500 4350 7200
+Text Notes 4550 7400 0    25   ~ 0
+Pull-up resistors for I2C pins. \nThe resistor values are usually recommended\nin the I2C specification. But, for a fast mode I2C (400KHz), \n2.2Kohm resistors are sufficient. 
 $EndSCHEMATC
