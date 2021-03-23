@@ -1022,107 +1022,107 @@ Power Circuitry: 12V/3.3V Buck Converter
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 6080669D
-P 6250 2350
-F 0 "J?" H 6350 2350 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 6350 2250 50  0000 L CNN
-F 2 "" H 6250 2350 50  0001 C CNN
-F 3 "~" H 6250 2350 50  0001 C CNN
-	1    6250 2350
+P 7200 2700
+F 0 "J?" H 7300 2700 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 7300 2600 50  0000 L CNN
+F 2 "" H 7200 2700 50  0001 C CNN
+F 3 "~" H 7200 2700 50  0001 C CNN
+	1    7200 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60806FA0
-P 6000 2500
-F 0 "#PWR?" H 6000 2250 50  0001 C CNN
-F 1 "GND" H 6000 2350 50  0000 C CNN
-F 2 "" H 6000 2500 50  0001 C CNN
-F 3 "" H 6000 2500 50  0001 C CNN
-	1    6000 2500
+P 6950 2850
+F 0 "#PWR?" H 6950 2600 50  0001 C CNN
+F 1 "GND" H 6950 2700 50  0000 C CNN
+F 2 "" H 6950 2850 50  0001 C CNN
+F 3 "" H 6950 2850 50  0001 C CNN
+	1    6950 2850
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 2500 6000 2450
+	6950 2850 6950 2800
 Wire Wire Line
-	6000 2450 6050 2450
+	6950 2800 7000 2800
 $Comp
 L power:+12V #PWR?
 U 1 1 6080AC53
-P 6000 2350
-F 0 "#PWR?" H 6000 2200 50  0001 C CNN
-F 1 "+12V" H 6000 2500 50  0000 C CNN
-F 2 "" H 6000 2350 50  0001 C CNN
-F 3 "" H 6000 2350 50  0001 C CNN
-	1    6000 2350
+P 6950 2700
+F 0 "#PWR?" H 6950 2550 50  0001 C CNN
+F 1 "+12V" H 6950 2850 50  0000 C CNN
+F 2 "" H 6950 2700 50  0001 C CNN
+F 3 "" H 6950 2700 50  0001 C CNN
+	1    6950 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 2350 6000 2350
+	7000 2700 6950 2700
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 60811133
-P 8350 2550
-F 0 "J?" H 8400 2900 50  0000 C CNN
-F 1 "SWD" H 8400 2250 50  0000 C CNN
-F 2 "" H 8350 2550 50  0001 C CNN
-F 3 "~" H 8350 2550 50  0001 C CNN
-	1    8350 2550
+P 9750 2750
+F 0 "J?" H 9800 3100 50  0000 C CNN
+F 1 "SWD" H 9800 2450 50  0000 C CNN
+F 2 "" H 9750 2750 50  0001 C CNN
+F 3 "~" H 9750 2750 50  0001 C CNN
+	1    9750 2750
 	1    0    0    -1  
 $EndComp
-Text Notes 6000 2800 0    25   ~ 0
+Text Notes 6950 3150 0    25   ~ 0
 Power Connectors
-Text Notes 8150 3100 0    25   ~ 0
+Text Notes 9550 3300 0    25   ~ 0
 Serial Wire Debug Connector \nStandard Connector\nGoogle swd pinout
 $Comp
 L power:+3V3 #PWR?
 U 1 1 6081F9A1
-P 8000 2250
-F 0 "#PWR?" H 8000 2100 50  0001 C CNN
-F 1 "+3V3" H 8000 2400 50  0000 C CNN
-F 2 "" H 8000 2250 50  0001 C CNN
-F 3 "" H 8000 2250 50  0001 C CNN
-	1    8000 2250
+P 9400 2450
+F 0 "#PWR?" H 9400 2300 50  0001 C CNN
+F 1 "+3V3" H 9400 2600 50  0000 C CNN
+F 2 "" H 9400 2450 50  0001 C CNN
+F 3 "" H 9400 2450 50  0001 C CNN
+	1    9400 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2250 8000 2350
+	9400 2450 9400 2550
 Wire Wire Line
-	8000 2350 8150 2350
+	9400 2550 9550 2550
 $Comp
 L power:GND #PWR?
 U 1 1 6083A068
-P 7900 2850
-F 0 "#PWR?" H 7900 2600 50  0001 C CNN
-F 1 "GND" H 7900 2700 50  0000 C CNN
-F 2 "" H 7900 2850 50  0001 C CNN
-F 3 "" H 7900 2850 50  0001 C CNN
-	1    7900 2850
+P 9300 3050
+F 0 "#PWR?" H 9300 2800 50  0001 C CNN
+F 1 "GND" H 9300 2900 50  0000 C CNN
+F 2 "" H 9300 3050 50  0001 C CNN
+F 3 "" H 9300 3050 50  0001 C CNN
+	1    9300 3050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 2450 7900 2450
+	9550 2650 9300 2650
 Wire Wire Line
-	7900 2550 8150 2550
+	9300 2750 9550 2750
 Wire Wire Line
-	7900 2450 7900 2550
-Connection ~ 7900 2550
+	9300 2650 9300 2750
+Connection ~ 9300 2750
 Wire Wire Line
-	7900 2550 7900 2750
+	9300 2750 9300 2950
 Wire Wire Line
-	8150 2750 7900 2750
-Connection ~ 7900 2750
+	9550 2950 9300 2950
+Connection ~ 9300 2950
 Wire Wire Line
-	7900 2750 7900 2850
-NoConn ~ 8150 2650
-Text GLabel 8650 2350 2    25   Input ~ 0
+	9300 2950 9300 3050
+NoConn ~ 9550 2850
+Text GLabel 10050 2550 2    25   Input ~ 0
 SWDIO
-Text GLabel 8650 2450 2    25   Input ~ 0
+Text GLabel 10050 2650 2    25   Input ~ 0
 SWCLK
-Text GLabel 8650 2550 2    25   Input ~ 0
+Text GLabel 10050 2750 2    25   Input ~ 0
 SWO
-Text GLabel 8650 2750 2    25   Input ~ 0
+Text GLabel 10050 2950 2    25   Input ~ 0
 NRST
-NoConn ~ 8650 2650
+NoConn ~ 10050 2850
 $Comp
 L Device:R_Small R?
 U 1 1 6085E3D5
@@ -1188,152 +1188,152 @@ Pull-up resistors for I2C pins. \nThe resistor values are usually recommended\ni
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 6087753B
-P 6450 3600
-F 0 "J?" H 6550 3600 50  0000 L CNN
-F 1 "Conn_01x04" H 6550 3500 50  0000 L CNN
-F 2 "" H 6450 3600 50  0001 C CNN
-F 3 "~" H 6450 3600 50  0001 C CNN
-	1    6450 3600
+P 7200 3750
+F 0 "J?" H 7300 3750 50  0000 L CNN
+F 1 "Conn_01x04" H 7300 3650 50  0000 L CNN
+F 2 "" H 7200 3750 50  0001 C CNN
+F 3 "~" H 7200 3750 50  0001 C CNN
+	1    7200 3750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 6087805C
-P 6200 3450
-F 0 "#PWR?" H 6200 3300 50  0001 C CNN
-F 1 "+3V3" H 6200 3600 50  0000 C CNN
-F 2 "" H 6200 3450 50  0001 C CNN
-F 3 "" H 6200 3450 50  0001 C CNN
-	1    6200 3450
+P 6950 3600
+F 0 "#PWR?" H 6950 3450 50  0001 C CNN
+F 1 "+3V3" H 6950 3750 50  0000 C CNN
+F 2 "" H 6950 3600 50  0001 C CNN
+F 3 "" H 6950 3600 50  0001 C CNN
+	1    6950 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 608789B9
-P 6200 3850
-F 0 "#PWR?" H 6200 3600 50  0001 C CNN
-F 1 "GND" H 6200 3700 50  0000 C CNN
-F 2 "" H 6200 3850 50  0001 C CNN
-F 3 "" H 6200 3850 50  0001 C CNN
-	1    6200 3850
+P 6950 4000
+F 0 "#PWR?" H 6950 3750 50  0001 C CNN
+F 1 "GND" H 6950 3850 50  0000 C CNN
+F 2 "" H 6950 4000 50  0001 C CNN
+F 3 "" H 6950 4000 50  0001 C CNN
+	1    6950 4000
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 3800 6200 3800
+	7000 3950 6950 3950
 Wire Wire Line
-	6200 3800 6200 3850
+	6950 3950 6950 4000
 Wire Wire Line
-	6200 3450 6200 3500
+	6950 3600 6950 3650
 Wire Wire Line
-	6200 3500 6250 3500
-Text GLabel 6250 3700 0    25   Input ~ 0
+	6950 3650 7000 3650
+Text GLabel 7000 3850 0    25   Input ~ 0
 I2C1_SCL
-Text GLabel 6250 3600 0    25   Input ~ 0
+Text GLabel 7000 3750 0    25   Input ~ 0
 I2C1_SDA
-Text Notes 6300 4150 0    25   ~ 0
+Text Notes 7050 4300 0    25   ~ 0
 I2C Connector
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 6089BD8D
-P 7750 3600
-F 0 "J?" H 7850 3600 50  0000 L CNN
-F 1 "Conn_01x04" H 7850 3500 50  0000 L CNN
-F 2 "" H 7750 3600 50  0001 C CNN
-F 3 "~" H 7750 3600 50  0001 C CNN
-	1    7750 3600
+P 9800 3800
+F 0 "J?" H 9900 3800 50  0000 L CNN
+F 1 "Conn_01x04" H 9900 3700 50  0000 L CNN
+F 2 "" H 9800 3800 50  0001 C CNN
+F 3 "~" H 9800 3800 50  0001 C CNN
+	1    9800 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 6089D097
-P 7500 3450
-F 0 "#PWR?" H 7500 3300 50  0001 C CNN
-F 1 "+3V3" H 7500 3600 50  0000 C CNN
-F 2 "" H 7500 3450 50  0001 C CNN
-F 3 "" H 7500 3450 50  0001 C CNN
-	1    7500 3450
+P 9550 3650
+F 0 "#PWR?" H 9550 3500 50  0001 C CNN
+F 1 "+3V3" H 9550 3800 50  0000 C CNN
+F 2 "" H 9550 3650 50  0001 C CNN
+F 3 "" H 9550 3650 50  0001 C CNN
+	1    9550 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6089DB8B
-P 7500 3850
-F 0 "#PWR?" H 7500 3600 50  0001 C CNN
-F 1 "GND" H 7500 3700 50  0000 C CNN
-F 2 "" H 7500 3850 50  0001 C CNN
-F 3 "" H 7500 3850 50  0001 C CNN
-	1    7500 3850
+P 9550 4050
+F 0 "#PWR?" H 9550 3800 50  0001 C CNN
+F 1 "GND" H 9550 3900 50  0000 C CNN
+F 2 "" H 9550 4050 50  0001 C CNN
+F 3 "" H 9550 4050 50  0001 C CNN
+	1    9550 4050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 3450 7500 3500
+	9550 3650 9550 3700
 Wire Wire Line
-	7500 3500 7550 3500
+	9550 3700 9600 3700
 Wire Wire Line
-	7500 3850 7500 3800
+	9550 4050 9550 4000
 Wire Wire Line
-	7500 3800 7550 3800
-Text GLabel 7550 3600 0    25   Input ~ 0
+	9550 4000 9600 4000
+Text GLabel 9600 3800 0    25   Input ~ 0
 USART3_TX
-Text GLabel 7550 3700 0    25   Input ~ 0
+Text GLabel 9600 3900 0    25   Input ~ 0
 USART3_RX
-Text Notes 7650 4150 0    25   ~ 0
+Text Notes 9700 4350 0    25   ~ 0
 UART Connector\n\n
 $Comp
 L Connector:USB_B_Micro J?
 U 1 1 608B3BCC
-P 6400 5050
-F 0 "J?" H 6400 5550 50  0000 C CNN
-F 1 "USB_B_Micro" H 6400 5450 50  0000 C CNN
-F 2 "" H 6550 5000 50  0001 C CNN
-F 3 "~" H 6550 5000 50  0001 C CNN
-	1    6400 5050
+P 7150 5200
+F 0 "J?" H 7150 5700 50  0000 C CNN
+F 1 "USB_B_Micro" H 7150 5600 50  0000 C CNN
+F 2 "" H 7300 5150 50  0001 C CNN
+F 3 "~" H 7300 5150 50  0001 C CNN
+	1    7150 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 608B6CA0
-P 6400 5550
-F 0 "#PWR?" H 6400 5300 50  0001 C CNN
-F 1 "GND" H 6400 5400 50  0000 C CNN
-F 2 "" H 6400 5550 50  0001 C CNN
-F 3 "" H 6400 5550 50  0001 C CNN
-	1    6400 5550
+P 7150 5700
+F 0 "#PWR?" H 7150 5450 50  0001 C CNN
+F 1 "GND" H 7150 5550 50  0000 C CNN
+F 2 "" H 7150 5700 50  0001 C CNN
+F 3 "" H 7150 5700 50  0001 C CNN
+	1    7150 5700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 5550 6400 5450
-NoConn ~ 6300 5450
-Text Notes 5950 6150 0    25   ~ 0
+	7150 5700 7150 5600
+NoConn ~ 7050 5600
+Text Notes 6700 6300 0    25   ~ 0
 JLCPCB doesn’t do through hole, \nwill have to solder this. \n\nThe Shield pin is can be left floating, \nas long as you’re not using any \nkind of metallic enclosure.  If you were, \nthen you would connect a resistor\nand capacitor to ground - read up on it if needed.  
 $Comp
 L Power_Protection:USBLC6-2SC6 U?
 U 1 1 608C7806
-P 8250 5100
-F 0 "U?" H 8500 5450 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 8550 4750 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8250 4600 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 8450 5450 50  0001 C CNN
-	1    8250 5100
+P 9800 5100
+F 0 "U?" H 10050 5450 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 10100 4750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9800 4600 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 10000 5450 50  0001 C CNN
+	1    9800 5100
 	1    0    0    -1  
 $EndComp
-Text Notes 7850 6150 0    25   ~ 0
+Text Notes 9400 6150 0    25   ~ 0
 This is a collection of tvs diodes \nthat provide ESD protection, this component is designed for USBs. \nThe USB will be connected and disconnected several times, \nthe electrostatic\ncharge on the human can flow through the usb connector, \nso to protect the circuit, you use tvs diodes. \n
 $Comp
 L power:+5V #PWR?
 U 1 1 608CBD21
-P 6750 4800
-F 0 "#PWR?" H 6750 4650 50  0001 C CNN
-F 1 "+5V" H 6750 4950 50  0000 C CNN
-F 2 "" H 6750 4800 50  0001 C CNN
-F 3 "" H 6750 4800 50  0001 C CNN
-	1    6750 4800
+P 7500 4950
+F 0 "#PWR?" H 7500 4800 50  0001 C CNN
+F 1 "+5V" H 7500 5100 50  0000 C CNN
+F 2 "" H 7500 4950 50  0001 C CNN
+F 3 "" H 7500 4950 50  0001 C CNN
+	1    7500 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 4800 6750 4850
+	7500 4950 7500 5000
 Wire Wire Line
-	6750 4850 6700 4850
+	7500 5000 7450 5000
 Wire Wire Line
 	900  1050 1100 1050
 Wire Wire Line
@@ -1423,45 +1423,47 @@ Wire Wire Line
 Wire Wire Line
 	2250 1050 2750 1050
 Connection ~ 2250 1050
-NoConn ~ 6700 5250
-Text Notes 6750 5300 0    25   ~ 0
+NoConn ~ 7450 5400
+Text Notes 7500 5450 0    25   ~ 0
 USB not being used as a HOST, \nso don’t need this ID pin. 
-Text GLabel 6700 5050 2    25   Input ~ 0
+Text GLabel 7450 5200 2    25   Input ~ 0
 USB_CONNECTOR_D+
-Text GLabel 6700 5150 2    25   Input ~ 0
+Text GLabel 7450 5300 2    25   Input ~ 0
 USB_CONNECTOR_D-
 $Comp
 L power:GND #PWR?
 U 1 1 60945D45
-P 8250 5600
-F 0 "#PWR?" H 8250 5350 50  0001 C CNN
-F 1 "GND" H 8250 5450 50  0000 C CNN
-F 2 "" H 8250 5600 50  0001 C CNN
-F 3 "" H 8250 5600 50  0001 C CNN
-	1    8250 5600
+P 9800 5600
+F 0 "#PWR?" H 9800 5350 50  0001 C CNN
+F 1 "GND" H 9800 5450 50  0000 C CNN
+F 2 "" H 9800 5600 50  0001 C CNN
+F 3 "" H 9800 5600 50  0001 C CNN
+	1    9800 5600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 5600 8250 5500
+	9800 5600 9800 5500
 $Comp
 L power:+5V #PWR?
 U 1 1 609625E7
-P 8250 4700
-F 0 "#PWR?" H 8250 4550 50  0001 C CNN
-F 1 "+5V" H 8250 4850 50  0000 C CNN
-F 2 "" H 8250 4700 50  0001 C CNN
-F 3 "" H 8250 4700 50  0001 C CNN
-	1    8250 4700
+P 9800 4700
+F 0 "#PWR?" H 9800 4550 50  0001 C CNN
+F 1 "+5V" H 9800 4850 50  0000 C CNN
+F 2 "" H 9800 4700 50  0001 C CNN
+F 3 "" H 9800 4700 50  0001 C CNN
+	1    9800 4700
 	1    0    0    -1  
 $EndComp
-Text GLabel 7850 5200 0    25   Input ~ 0
+Text GLabel 9400 5200 0    25   Input ~ 0
 USB_CONNECTOR_D-
-Text GLabel 8650 5200 2    25   Input ~ 0
+Text GLabel 10200 5200 2    25   Input ~ 0
 USB_CONNECTOR_D+
-Text GLabel 7850 5000 0    25   Input ~ 0
+Text GLabel 9400 5000 0    25   Input ~ 0
 USB_D-
-Text GLabel 8650 5000 2    25   Input ~ 0
+Text GLabel 10200 5000 2    25   Input ~ 0
 USB_D+
-Text Notes 8900 6200 2    25   ~ 0
+Text Notes 10450 6200 2    25   ~ 0
 Any discharge would be dissipated across the diodes. 
+Text Notes 7750 2100 0    60   ~ 0
+Connectors
 $EndSCHEMATC
