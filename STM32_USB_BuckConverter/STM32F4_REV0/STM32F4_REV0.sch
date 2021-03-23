@@ -1077,4 +1077,108 @@ Wire Wire Line
 	1250 1000 1250 1050
 Wire Wire Line
 	1250 1050 1450 1050
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 6080669D
+P 6250 2350
+F 0 "J?" H 6350 2350 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6350 2250 50  0000 L CNN
+F 2 "" H 6250 2350 50  0001 C CNN
+F 3 "~" H 6250 2350 50  0001 C CNN
+	1    6250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60806FA0
+P 6000 2500
+F 0 "#PWR?" H 6000 2250 50  0001 C CNN
+F 1 "GND" H 6000 2350 50  0000 C CNN
+F 2 "" H 6000 2500 50  0001 C CNN
+F 3 "" H 6000 2500 50  0001 C CNN
+	1    6000 2500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2500 6000 2450
+Wire Wire Line
+	6000 2450 6050 2450
+$Comp
+L power:+12V #PWR?
+U 1 1 6080AC53
+P 6000 2350
+F 0 "#PWR?" H 6000 2200 50  0001 C CNN
+F 1 "+12V" H 6000 2500 50  0000 C CNN
+F 2 "" H 6000 2350 50  0001 C CNN
+F 3 "" H 6000 2350 50  0001 C CNN
+	1    6000 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2350 6000 2350
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 60811133
+P 8350 2550
+F 0 "J?" H 8400 2900 50  0000 C CNN
+F 1 "SWD" H 8400 2250 50  0000 C CNN
+F 2 "" H 8350 2550 50  0001 C CNN
+F 3 "~" H 8350 2550 50  0001 C CNN
+	1    8350 2550
+	1    0    0    -1  
+$EndComp
+Text Notes 6000 2800 0    25   ~ 0
+Power Connectors
+Text Notes 8150 3100 0    25   ~ 0
+Serial Wire Debug Connector \nStandard Connector\nGoogle swd pinout
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6081F9A1
+P 8000 2250
+F 0 "#PWR?" H 8000 2100 50  0001 C CNN
+F 1 "+3V3" H 8000 2400 50  0000 C CNN
+F 2 "" H 8000 2250 50  0001 C CNN
+F 3 "" H 8000 2250 50  0001 C CNN
+	1    8000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2250 8000 2350
+Wire Wire Line
+	8000 2350 8150 2350
+$Comp
+L power:GND #PWR?
+U 1 1 6083A068
+P 7900 2850
+F 0 "#PWR?" H 7900 2600 50  0001 C CNN
+F 1 "GND" H 7900 2700 50  0000 C CNN
+F 2 "" H 7900 2850 50  0001 C CNN
+F 3 "" H 7900 2850 50  0001 C CNN
+	1    7900 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2450 7900 2450
+Wire Wire Line
+	7900 2550 8150 2550
+Wire Wire Line
+	7900 2450 7900 2550
+Connection ~ 7900 2550
+Wire Wire Line
+	7900 2550 7900 2750
+Wire Wire Line
+	8150 2750 7900 2750
+Connection ~ 7900 2750
+Wire Wire Line
+	7900 2750 7900 2850
+NoConn ~ 8150 2650
+Text GLabel 8650 2350 2    25   Input ~ 0
+SWDIO
+Text GLabel 8650 2450 2    25   Input ~ 0
+SWCLK
+Text GLabel 8650 2550 2    25   Input ~ 0
+SWO
+Text GLabel 8650 2750 2    25   Input ~ 0
+NRST
+NoConn ~ 8650 2650
 $EndSCHEMATC
