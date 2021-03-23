@@ -66,10 +66,10 @@ NRST
 Text GLabel 1500 4200 0    50   Input ~ 0
 BOOT0
 $Comp
-L Device:C_Small C?
+L Device:C_Small C14
 U 1 1 605BFADC
 P 1250 4750
-F 0 "C?" H 1350 4850 50  0000 L CNN
+F 0 "C14" H 1350 4850 50  0000 L CNN
 F 1 "2u2" H 1350 4750 50  0000 L CNN
 F 2 "" H 1250 4750 50  0001 C CNN
 F 3 "~" H 1250 4750 50  0001 C CNN
@@ -77,10 +77,10 @@ F 3 "~" H 1250 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C13
 U 1 1 605C1852
 P 900 4750
-F 0 "C?" H 1000 4850 50  0000 L CNN
+F 0 "C13" H 1000 4850 50  0000 L CNN
 F 1 "2u2" H 1000 4750 50  0000 L CNN
 F 2 "" H 900 4750 50  0001 C CNN
 F 3 "~" H 900 4750 50  0001 C CNN
@@ -88,10 +88,10 @@ F 3 "~" H 900 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_ST_STM32F4:STM32F405RGTx U?
+L MCU_ST_STM32F4:STM32F405RGTx U2
 U 1 1 605938B8
 P 2200 5600
-F 0 "U?" H 2750 7350 50  0000 C CNN
+F 0 "U2" H 2750 7350 50  0000 C CNN
 F 1 "STM32F405RGT6" H 2700 3850 50  0000 C CNN
 F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 1600 3900 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 2200 5600 50  0001 C CNN
@@ -158,10 +158,10 @@ Wire Wire Line
 Wire Wire Line
 	1250 4850 1250 4950
 $Comp
-L Switch:SW_SPDT SW?
+L Switch:SW_SPDT SW1
 U 1 1 605EF029
 P 4400 4250
-F 0 "SW?" H 4400 4550 50  0000 C CNN
+F 0 "SW1" H 4400 4550 50  0000 C CNN
 F 1 "SW_SPDT" H 4400 4450 50  0000 C CNN
 F 2 "" H 4400 4250 50  0001 C CNN
 F 3 "~" H 4400 4250 50  0001 C CNN
@@ -169,10 +169,10 @@ F 3 "~" H 4400 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R7
 U 1 1 605F037E
 P 4100 4250
-F 0 "R?" V 4000 4250 50  0000 C CNN
+F 0 "R7" V 4000 4250 50  0000 C CNN
 F 1 "10k" V 4200 4250 50  0000 C CNN
 F 2 "" H 4100 4250 50  0001 C CNN
 F 3 "~" H 4100 4250 50  0001 C CNN
@@ -275,10 +275,10 @@ NoConn ~ 1500 7000
 NoConn ~ 1500 7100
 NoConn ~ 1500 7200
 $Comp
-L Device:C_Small C?
+L Device:C_Small C5
 U 1 1 606143B4
 P 900 2950
-F 0 "C?" H 1000 3000 50  0000 L CNN
+F 0 "C5" H 1000 3050 50  0000 L CNN
 F 1 "4u7" H 1000 2950 50  0000 L CNN
 F 2 "" H 900 2950 50  0001 C CNN
 F 3 "~" H 900 2950 50  0001 C CNN
@@ -286,10 +286,10 @@ F 3 "~" H 900 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C6
 U 1 1 6061463E
 P 1250 2950
-F 0 "C?" H 1350 3000 50  0000 L CNN
+F 0 "C6" H 1400 3050 50  0000 L CNN
 F 1 "100n" H 1350 2950 50  0000 L CNN
 F 2 "" H 1250 2950 50  0001 C CNN
 F 3 "~" H 1250 2950 50  0001 C CNN
@@ -297,10 +297,10 @@ F 3 "~" H 1250 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C7
 U 1 1 6061595D
 P 1650 2950
-F 0 "C?" H 1750 3000 50  0000 L CNN
+F 0 "C7" H 1800 3050 50  0000 L CNN
 F 1 "100n" H 1750 2950 50  0000 L CNN
 F 2 "" H 1650 2950 50  0001 C CNN
 F 3 "~" H 1650 2950 50  0001 C CNN
@@ -308,10 +308,10 @@ F 3 "~" H 1650 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C8
 U 1 1 6061616C
 P 2050 2950
-F 0 "C?" H 2150 3000 50  0000 L CNN
+F 0 "C8" H 2200 3050 50  0000 L CNN
 F 1 "100n" H 2150 2950 50  0000 L CNN
 F 2 "" H 2050 2950 50  0001 C CNN
 F 3 "~" H 2050 2950 50  0001 C CNN
@@ -319,10 +319,10 @@ F 3 "~" H 2050 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C9
 U 1 1 60616AA4
 P 2450 2950
-F 0 "C?" H 2550 3000 50  0000 L CNN
+F 0 "C9" H 2600 3050 50  0000 L CNN
 F 1 "100n" H 2550 2950 50  0000 L CNN
 F 2 "" H 2450 2950 50  0001 C CNN
 F 3 "~" H 2450 2950 50  0001 C CNN
@@ -330,10 +330,10 @@ F 3 "~" H 2450 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C10
 U 1 1 6061768B
 P 2850 2950
-F 0 "C?" H 2950 3000 50  0000 L CNN
+F 0 "C10" H 3000 3050 50  0000 L CNN
 F 1 "100n" H 2950 2950 50  0000 L CNN
 F 2 "" H 2850 2950 50  0001 C CNN
 F 3 "~" H 2850 2950 50  0001 C CNN
@@ -421,10 +421,10 @@ Connection ~ 1250 2800
 Wire Wire Line
 	1250 2800 1650 2800
 $Comp
-L Device:L_Small L?
+L Device:L_Small L2
 U 1 1 606217D0
 P 3850 2900
-F 0 "L?" V 3950 2900 50  0000 C CNN
+F 0 "L2" V 3950 2900 50  0000 C CNN
 F 1 "39n" V 3750 2900 50  0000 C CNN
 F 2 "" H 3850 2900 50  0001 C CNN
 F 3 "~" H 3850 2900 50  0001 C CNN
@@ -447,10 +447,10 @@ Wire Wire Line
 Wire Wire Line
 	3600 2900 3750 2900
 $Comp
-L Device:C_Small C?
+L Device:C_Small C11
 U 1 1 60624833
 P 4100 3100
-F 0 "C?" H 4200 3150 50  0000 L CNN
+F 0 "C11" H 4200 3150 50  0000 L CNN
 F 1 "1u" H 4200 3100 50  0000 L CNN
 F 2 "" H 4100 3100 50  0001 C CNN
 F 3 "~" H 4100 3100 50  0001 C CNN
@@ -458,10 +458,10 @@ F 3 "~" H 4100 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C12
 U 1 1 60624F7E
 P 4550 3100
-F 0 "C?" H 4650 3150 50  0000 L CNN
+F 0 "C12" H 4650 3150 50  0000 L CNN
 F 1 "10n" H 4650 3100 50  0000 L CNN
 F 2 "" H 4550 3100 50  0001 C CNN
 F 3 "~" H 4550 3100 50  0001 C CNN
@@ -512,10 +512,10 @@ Connection ~ 4100 3250
 Wire Wire Line
 	4100 3250 4100 3300
 $Comp
-L Device:Crystal_GND24_Small Y?
+L Device:Crystal_GND24_Small Y1
 U 1 1 6062C86D
 P 4400 5300
-F 0 "Y?" H 4350 5650 50  0000 L CNN
+F 0 "Y1" H 4350 5650 50  0000 L CNN
 F 1 "16MHz" H 4300 5550 50  0000 L CNN
 F 2 "" H 4400 5300 50  0001 C CNN
 F 3 "~" H 4400 5300 50  0001 C CNN
@@ -523,10 +523,10 @@ F 3 "~" H 4400 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C15
 U 1 1 6062EA12
 P 4100 5550
-F 0 "C?" H 4200 5650 50  0000 L CNN
+F 0 "C15" H 4200 5650 50  0000 L CNN
 F 1 "12p" H 4200 5550 50  0000 L CNN
 F 2 "" H 4100 5550 50  0001 C CNN
 F 3 "~" H 4100 5550 50  0001 C CNN
@@ -575,10 +575,10 @@ $EndComp
 Wire Wire Line
 	4400 5150 4400 5200
 $Comp
-L Device:R_Small R?
+L Device:R_Small R8
 U 1 1 6063C414
 P 4700 5050
-F 0 "R?" H 4800 5100 50  0000 L CNN
+F 0 "R8" H 4800 5100 50  0000 L CNN
 F 1 "47" H 4800 5000 50  0000 L CNN
 F 2 "" H 4700 5050 50  0001 C CNN
 F 3 "~" H 4700 5050 50  0001 C CNN
@@ -618,10 +618,10 @@ NRST allows hard reseting the\n chip by driving this pin low.
 Text Notes 3650 6550 0    25   ~ 0
 The Feed Resistor allows limiting the oscillator drive input coming from the chip,\nallowing you to reduce the harmonics generated,  \nwhich results in less noise being generated. \n\nThe feed resistor is not always necessary, \nbut its included to reduce the noise. \nThe feed resistor calculated as 47 Ohms - Read ST Oscillator Design application note - AN2867
 $Comp
-L Device:C_Small C?
+L Device:C_Small C16
 U 1 1 6062DC99
 P 4700 5550
-F 0 "C?" H 4800 5650 50  0000 L CNN
+F 0 "C16" H 4800 5650 50  0000 L CNN
 F 1 "12p" H 4800 5550 50  0000 L CNN
 F 2 "" H 4700 5550 50  0001 C CNN
 F 3 "~" H 4700 5550 50  0001 C CNN
@@ -635,10 +635,10 @@ Low ESR Capacitors
 Text Notes 550  2150 0    90   ~ 0
 STM Micrcontroller 
 $Comp
-L Device:LED_Small D?
+L Device:LED_Small D4
 U 1 1 606E48FD
 P 900 6350
-F 0 "D?" V 1000 6250 50  0000 R CNN
+F 0 "D4" V 1000 6250 50  0000 R CNN
 F 1 "BLUE" V 900 6250 50  0000 R CNN
 F 2 "" V 900 6350 50  0001 C CNN
 F 3 "~" V 900 6350 50  0001 C CNN
@@ -657,10 +657,10 @@ F 3 "" H 900 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R9
 U 1 1 606EA368
 P 900 6600
-F 0 "R?" H 800 6550 50  0000 C CNN
+F 0 "R9" H 800 6550 50  0000 C CNN
 F 1 "1k5" H 800 6650 50  0000 C CNN
 F 2 "" H 900 6600 50  0001 C CNN
 F 3 "~" H 900 6600 50  0001 C CNN
@@ -703,21 +703,21 @@ $EndComp
 Wire Wire Line
 	5650 1700 5650 1650
 $Comp
-L JunaidKhanKiCADLibrary:MP2359DJ-LF-Z U?
+L JunaidKhanKiCADLibrary:MP2359DJ-LF-Z U1
 U 1 1 60703211
 P 6200 550
-F 0 "U?" H 5650 400 50  0000 C CNN
-F 1 "MP2359DJ-LF-Z" H 5650 300 50  0000 C CNN
+F 0 "U1" H 5850 250 50  0000 C CNN
+F 1 "MP2359DJ-LF-Z" H 6000 -500 50  0000 C CNN
 F 2 "" H 6950 500 500 0001 C CNN
 F 3 "" H 6950 500 500 0001 C CNN
 	1    6200 550 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small FB?
+L Device:Ferrite_Bead_Small FB1
 U 1 1 607283EA
 P 2850 1050
-F 0 "FB?" V 3000 1050 50  0000 C CNN
+F 0 "FB1" V 3000 1050 50  0000 C CNN
 F 1 "600 @ 600MHz" V 2750 1000 25  0000 C CNN
 F 2 "" V 2780 1050 50  0001 C CNN
 F 3 "~" H 2850 1050 50  0001 C CNN
@@ -725,10 +725,10 @@ F 3 "~" H 2850 1050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C1
 U 1 1 607304BE
 P 3400 1250
-F 0 "C?" H 3550 1350 50  0000 L CNN
+F 0 "C1" H 3550 1350 50  0000 L CNN
 F 1 "10u" H 3550 1250 50  0000 L CNN
 F 2 "" H 3400 1250 50  0001 C CNN
 F 3 "~" H 3400 1250 50  0001 C CNN
@@ -758,10 +758,10 @@ Wire Wire Line
 	3650 1050 3400 1050
 Connection ~ 3400 1050
 $Comp
-L Device:R_Small R?
+L Device:R_Small R1
 U 1 1 6074641D
 P 4400 850
-F 0 "R?" H 4300 800 50  0000 R CNN
+F 0 "R1" H 4300 800 50  0000 R CNN
 F 1 "100k" H 4300 900 50  0000 R CNN
 F 2 "" H 4400 850 50  0001 C CNN
 F 3 "~" H 4400 850 50  0001 C CNN
@@ -769,10 +769,10 @@ F 3 "~" H 4400 850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R2
 U 1 1 60746A3A
 P 4400 1150
-F 0 "R?" H 4300 1100 50  0000 R CNN
+F 0 "R2" H 4300 1100 50  0000 R CNN
 F 1 "68k" H 4300 1200 50  0000 R CNN
 F 2 "" H 4400 1150 50  0001 C CNN
 F 3 "~" H 4400 1150 50  0001 C CNN
@@ -810,10 +810,10 @@ Wire Wire Line
 Text Notes 4150 1850 0    25   ~ 0
 The enable pin requires a min of 1.2V to turn on. \nThe enable pin will fry if the voltage is greater \nthan 6V, can’t feed the 12V BUCK_IN. \nSo, the voltage divider ensures the voltage \nafter 100k resistor is less than 6V, protecting \nthe pin as well as providing above min needed. 
 $Comp
-L Device:C_Small C?
+L Device:C_Small C2
 U 1 1 607633B5
 P 6750 1350
-F 0 "C?" V 6900 1350 50  0000 C CNN
+F 0 "C2" V 6900 1350 50  0000 C CNN
 F 1 "10n" V 6600 1350 50  0000 C CNN
 F 2 "" H 6750 1350 50  0001 C CNN
 F 3 "~" H 6750 1350 50  0001 C CNN
@@ -826,204 +826,204 @@ Text GLabel 6850 1350 2    25   Input ~ 0
 BUCK_SW
 Text Notes 6450 1100 0    25   ~ 0
 Booststrap capacitance between the Boost pin \nand the switch. Its from the datasheet \nof the buck converter.
-Text GLabel 8000 850  0    25   Input ~ 0
+Text GLabel 7700 800  0    25   Input ~ 0
 BUCK_SW
 $Comp
-L Device:D_Schottky_Small D?
+L Device:D_Schottky_Small D2
 U 1 1 607650EC
-P 8150 1050
-F 0 "D?" V 8100 1150 50  0000 L CNN
-F 1 "B5819W" V 8200 1150 50  0000 L CNN
-F 2 "" V 8150 1050 50  0001 C CNN
-F 3 "~" V 8150 1050 50  0001 C CNN
-	1    8150 1050
+P 7850 1000
+F 0 "D2" V 7800 1100 50  0000 L CNN
+F 1 "B5819W" V 7900 1100 50  0000 L CNN
+F 2 "" V 7850 1000 50  0001 C CNN
+F 3 "~" V 7850 1000 50  0001 C CNN
+	1    7850 1000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8000 850  8150 850 
+	7700 800  7850 800 
 Wire Wire Line
-	8150 850  8150 950 
+	7850 800  7850 900 
 $Comp
 L power:GND #PWR?
 U 1 1 60769940
-P 8150 1250
-F 0 "#PWR?" H 8150 1000 50  0001 C CNN
-F 1 "GND" H 8150 1100 50  0000 C CNN
-F 2 "" H 8150 1250 50  0001 C CNN
-F 3 "" H 8150 1250 50  0001 C CNN
-	1    8150 1250
+P 7850 1200
+F 0 "#PWR?" H 7850 950 50  0001 C CNN
+F 1 "GND" H 7850 1050 50  0000 C CNN
+F 2 "" H 7850 1200 50  0001 C CNN
+F 3 "" H 7850 1200 50  0001 C CNN
+	1    7850 1200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 1150 8150 1250
+	7850 1100 7850 1200
 $Comp
-L Device:L_Small L?
+L Device:L_Small L1
 U 1 1 6076D528
-P 8600 850
-F 0 "L?" V 8700 850 50  0000 C CNN
-F 1 "10u" V 8500 850 50  0000 C CNN
-F 2 "" H 8600 850 50  0001 C CNN
-F 3 "~" H 8600 850 50  0001 C CNN
-	1    8600 850 
+P 8300 800
+F 0 "L1" V 8400 800 50  0000 C CNN
+F 1 "10u" V 8200 800 50  0000 C CNN
+F 2 "" H 8300 800 50  0001 C CNN
+F 3 "~" H 8300 800 50  0001 C CNN
+	1    8300 800 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8150 850  8500 850 
-Connection ~ 8150 850 
+	7850 800  8200 800 
+Connection ~ 7850 800 
 $Comp
-L Device:C_Small C?
+L Device:C_Small C3
 U 1 1 60770683
-P 8850 1050
-F 0 "C?" H 8950 1100 50  0000 L CNN
-F 1 "10u" H 8950 1000 50  0000 L CNN
-F 2 "" H 8850 1050 50  0001 C CNN
-F 3 "~" H 8850 1050 50  0001 C CNN
-	1    8850 1050
+P 8550 1000
+F 0 "C3" H 8650 1050 50  0000 L CNN
+F 1 "10u" H 8650 950 50  0000 L CNN
+F 2 "" H 8550 1000 50  0001 C CNN
+F 3 "~" H 8550 1000 50  0001 C CNN
+	1    8550 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 850  8850 850 
+	8400 800  8550 800 
 Wire Wire Line
-	8850 850  8850 950 
+	8550 800  8550 900 
 $Comp
 L power:GND #PWR?
 U 1 1 607745CF
-P 8850 1250
-F 0 "#PWR?" H 8850 1000 50  0001 C CNN
-F 1 "GND" H 8850 1100 50  0000 C CNN
-F 2 "" H 8850 1250 50  0001 C CNN
-F 3 "" H 8850 1250 50  0001 C CNN
-	1    8850 1250
+P 8550 1200
+F 0 "#PWR?" H 8550 950 50  0001 C CNN
+F 1 "GND" H 8550 1050 50  0000 C CNN
+F 2 "" H 8550 1200 50  0001 C CNN
+F 3 "" H 8550 1200 50  0001 C CNN
+	1    8550 1200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 1150 8850 1250
+	8550 1100 8550 1200
 $Comp
-L Device:C_Small C?
+L Device:C_Small C4
 U 1 1 6077794C
-P 9250 1050
-F 0 "C?" H 9350 1100 50  0000 L CNN
-F 1 "10u" H 9350 1000 50  0000 L CNN
-F 2 "" H 9250 1050 50  0001 C CNN
-F 3 "~" H 9250 1050 50  0001 C CNN
-	1    9250 1050
+P 8950 1000
+F 0 "C4" H 9050 1050 50  0000 L CNN
+F 1 "10u" H 9050 950 50  0000 L CNN
+F 2 "" H 8950 1000 50  0001 C CNN
+F 3 "~" H 8950 1000 50  0001 C CNN
+	1    8950 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60777E4F
-P 9250 1250
-F 0 "#PWR?" H 9250 1000 50  0001 C CNN
-F 1 "GND" H 9250 1100 50  0000 C CNN
-F 2 "" H 9250 1250 50  0001 C CNN
-F 3 "" H 9250 1250 50  0001 C CNN
-	1    9250 1250
+P 8950 1200
+F 0 "#PWR?" H 8950 950 50  0001 C CNN
+F 1 "GND" H 8950 1050 50  0000 C CNN
+F 2 "" H 8950 1200 50  0001 C CNN
+F 3 "" H 8950 1200 50  0001 C CNN
+	1    8950 1200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 850  9250 850 
+	8550 800  8950 800 
 Wire Wire Line
-	9250 850  9250 950 
-Connection ~ 8850 850 
+	8950 800  8950 900 
+Connection ~ 8550 800 
 Wire Wire Line
-	9250 1150 9250 1250
-Text Notes 7850 1800 0    25   ~ 0
+	8950 1100 8950 1200
+Text Notes 7550 1750 0    25   ~ 0
 The inductor and output capacitor \nare calculated using the equation \nin the datasheet for the buck \nconverter. \n\nDatasheet recommended 1 output capacitor, \nadded two to achieve lower ESR.
 $Comp
 L power:+3V3 #PWR?
 U 1 1 607831D8
-P 9250 800
-F 0 "#PWR?" H 9250 650 50  0001 C CNN
-F 1 "+3V3" H 9250 950 50  0000 C CNN
-F 2 "" H 9250 800 50  0001 C CNN
-F 3 "" H 9250 800 50  0001 C CNN
-	1    9250 800 
+P 8950 750
+F 0 "#PWR?" H 8950 600 50  0001 C CNN
+F 1 "+3V3" H 8950 900 50  0000 C CNN
+F 2 "" H 8950 750 50  0001 C CNN
+F 3 "" H 8950 750 50  0001 C CNN
+	1    8950 750 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9250 800  9250 850 
-Connection ~ 9250 850 
+	8950 750  8950 800 
+Connection ~ 8950 800 
 $Comp
-L Device:R_Small R?
+L Device:R_Small R3
 U 1 1 60787E7D
-P 9950 900
-F 0 "R?" H 10050 950 50  0000 L CNN
-F 1 "47k" H 10050 850 50  0000 L CNN
-F 2 "" H 9950 900 50  0001 C CNN
-F 3 "~" H 9950 900 50  0001 C CNN
-	1    9950 900 
+P 9500 900
+F 0 "R3" H 9600 950 50  0000 L CNN
+F 1 "47k" H 9600 850 50  0000 L CNN
+F 2 "" H 9500 900 50  0001 C CNN
+F 3 "~" H 9500 900 50  0001 C CNN
+	1    9500 900 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R4
 U 1 1 6078840E
-P 9950 1200
-F 0 "R?" H 10050 1250 50  0000 L CNN
-F 1 "15k" H 10100 1150 50  0000 L CNN
-F 2 "" H 9950 1200 50  0001 C CNN
-F 3 "~" H 9950 1200 50  0001 C CNN
-	1    9950 1200
+P 9500 1200
+F 0 "R4" H 9600 1250 50  0000 L CNN
+F 1 "15k" H 9600 1150 50  0000 L CNN
+F 2 "" H 9500 1200 50  0001 C CNN
+F 3 "~" H 9500 1200 50  0001 C CNN
+	1    9500 1200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R5
 U 1 1 60788D8C
-P 9950 1500
-F 0 "R?" H 10050 1550 50  0000 L CNN
-F 1 "270k" H 10050 1450 50  0000 L CNN
-F 2 "" H 9950 1500 50  0001 C CNN
-F 3 "~" H 9950 1500 50  0001 C CNN
-	1    9950 1500
+P 9500 1500
+F 0 "R5" H 9600 1550 50  0000 L CNN
+F 1 "270" H 9600 1450 50  0000 L CNN
+F 2 "" H 9500 1500 50  0001 C CNN
+F 3 "~" H 9500 1500 50  0001 C CNN
+	1    9500 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60789010
-P 9950 1700
-F 0 "#PWR?" H 9950 1450 50  0001 C CNN
-F 1 "GND" H 9950 1550 50  0000 C CNN
-F 2 "" H 9950 1700 50  0001 C CNN
-F 3 "" H 9950 1700 50  0001 C CNN
-	1    9950 1700
+P 9500 1700
+F 0 "#PWR?" H 9500 1450 50  0001 C CNN
+F 1 "GND" H 9500 1550 50  0000 C CNN
+F 2 "" H 9500 1700 50  0001 C CNN
+F 3 "" H 9500 1700 50  0001 C CNN
+	1    9500 1700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9950 1700 9950 1600
+	9500 1700 9500 1600
 Wire Wire Line
-	9950 1400 9950 1300
+	9500 1400 9500 1300
 Wire Wire Line
-	9950 1100 9950 1050
+	9500 1100 9500 1050
 $Comp
 L power:+3V3 #PWR?
 U 1 1 607934EC
-P 9950 700
-F 0 "#PWR?" H 9950 550 50  0001 C CNN
-F 1 "+3V3" H 9950 850 50  0000 C CNN
-F 2 "" H 9950 700 50  0001 C CNN
-F 3 "" H 9950 700 50  0001 C CNN
-	1    9950 700 
+P 9500 700
+F 0 "#PWR?" H 9500 550 50  0001 C CNN
+F 1 "+3V3" H 9500 850 50  0000 C CNN
+F 2 "" H 9500 700 50  0001 C CNN
+F 3 "" H 9500 700 50  0001 C CNN
+	1    9500 700 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9950 700  9950 800 
-Text GLabel 10150 1050 2    25   Input ~ 0
+	9500 700  9500 800 
+Text GLabel 9700 1050 2    25   Input ~ 0
 BUCK_FB
 Wire Wire Line
-	10150 1050 9950 1050
-Connection ~ 9950 1050
+	9700 1050 9500 1050
+Connection ~ 9500 1050
 Wire Wire Line
-	9950 1050 9950 1000
-Text Notes 10400 1450 0    25   ~ 0
+	9500 1050 9500 1000
+Text Notes 9850 1600 0    25   ~ 0
 The feedback voltage is governed by \nthe resistors R1 and R2 - the datasheet. \n\nWe need 3.3V on the output, use the \ndatasheet equation to get the resistor \nratio. Using standard resistors to \nachieve the ratio calculated.
 Wire Notes Line
 	450  2000 11250 2000
 Text Notes 5550 600  0    60   ~ 0
 Power Circuitry: 12V/3.3V Buck Converter 
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J1
 U 1 1 6080669D
 P 7200 2700
-F 0 "J?" H 7300 2700 50  0000 L CNN
+F 0 "J1" H 7300 2700 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 7300 2600 50  0000 L CNN
 F 2 "" H 7200 2700 50  0001 C CNN
 F 3 "~" H 7200 2700 50  0001 C CNN
@@ -1059,10 +1059,10 @@ $EndComp
 Wire Wire Line
 	7000 2700 6950 2700
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
+L Connector_Generic:Conn_02x05_Odd_Even J2
 U 1 1 60811133
 P 9750 2750
-F 0 "J?" H 9800 3100 50  0000 C CNN
+F 0 "J2" H 9800 3100 50  0000 C CNN
 F 1 "SWD" H 9800 2450 50  0000 C CNN
 F 2 "" H 9750 2750 50  0001 C CNN
 F 3 "~" H 9750 2750 50  0001 C CNN
@@ -1124,10 +1124,10 @@ Text GLabel 10050 2950 2    25   Input ~ 0
 NRST
 NoConn ~ 10050 2850
 $Comp
-L Device:R_Small R?
+L Device:R_Small R10
 U 1 1 6085E3D5
 P 4050 7100
-F 0 "R?" H 3950 7050 50  0000 C CNN
+F 0 "R10" H 3950 7050 50  0000 C CNN
 F 1 "2k2" H 3950 7150 50  0000 C CNN
 F 2 "" H 4050 7100 50  0001 C CNN
 F 3 "~" H 4050 7100 50  0001 C CNN
@@ -1135,10 +1135,10 @@ F 3 "~" H 4050 7100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R11
 U 1 1 6085E794
 P 4350 7100
-F 0 "R?" H 4250 7050 50  0000 C CNN
+F 0 "R11" H 4250 7050 50  0000 C CNN
 F 1 "2k2" H 4250 7150 50  0000 C CNN
 F 2 "" H 4350 7100 50  0001 C CNN
 F 3 "~" H 4350 7100 50  0001 C CNN
@@ -1186,10 +1186,10 @@ Wire Wire Line
 Text Notes 4550 7400 0    25   ~ 0
 Pull-up resistors for I2C pins. \nThe resistor values are usually recommended\nin the I2C specification. But, for a fast mode I2C (400KHz), \n2.2Kohm resistors are sufficient. 
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J3
 U 1 1 6087753B
 P 7200 3750
-F 0 "J?" H 7300 3750 50  0000 L CNN
+F 0 "J3" H 7300 3750 50  0000 L CNN
 F 1 "Conn_01x04" H 7300 3650 50  0000 L CNN
 F 2 "" H 7200 3750 50  0001 C CNN
 F 3 "~" H 7200 3750 50  0001 C CNN
@@ -1233,10 +1233,10 @@ I2C1_SDA
 Text Notes 7050 4300 0    25   ~ 0
 I2C Connector
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J4
 U 1 1 6089BD8D
 P 9800 3800
-F 0 "J?" H 9900 3800 50  0000 L CNN
+F 0 "J4" H 9900 3800 50  0000 L CNN
 F 1 "Conn_01x04" H 9900 3700 50  0000 L CNN
 F 2 "" H 9800 3800 50  0001 C CNN
 F 3 "~" H 9800 3800 50  0001 C CNN
@@ -1280,10 +1280,10 @@ USART3_RX
 Text Notes 9700 4350 0    25   ~ 0
 UART Connector\n\n
 $Comp
-L Connector:USB_B_Micro J?
+L Connector:USB_B_Micro J5
 U 1 1 608B3BCC
 P 7150 5200
-F 0 "J?" H 7150 5700 50  0000 C CNN
+F 0 "J5" H 7150 5700 50  0000 C CNN
 F 1 "USB_B_Micro" H 7150 5600 50  0000 C CNN
 F 2 "" H 7300 5150 50  0001 C CNN
 F 3 "~" H 7300 5150 50  0001 C CNN
@@ -1307,10 +1307,10 @@ NoConn ~ 7050 5600
 Text Notes 6700 6300 0    25   ~ 0
 JLCPCB doesn’t do through hole, \nwill have to solder this. \n\nThe Shield pin is can be left floating, \nas long as you’re not using any \nkind of metallic enclosure.  If you were, \nthen you would connect a resistor\nand capacitor to ground - read up on it if needed.  
 $Comp
-L Power_Protection:USBLC6-2SC6 U?
+L Power_Protection:USBLC6-2SC6 U3
 U 1 1 608C7806
 P 9800 5100
-F 0 "U?" H 10050 5450 50  0000 C CNN
+F 0 "U3" H 10050 5450 50  0000 C CNN
 F 1 "USBLC6-2SC6" H 10100 4750 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9800 4600 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 10000 5450 50  0001 C CNN
@@ -1339,10 +1339,10 @@ Wire Wire Line
 Wire Wire Line
 	900  1000 900  1050
 $Comp
-L Transistor_FET:AO3401A Q?
+L Transistor_FET:AO3401A Q1
 U 1 1 6070E341
 P 1600 1150
-F 0 "Q?" V 2000 1150 50  0000 C CNN
+F 0 "Q1" V 2000 1150 50  0000 C CNN
 F 1 "AO3401A" V 1900 1150 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 1800 1075 50  0001 L CIN
 F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 1600 1150 50  0001 L CNN
@@ -1367,10 +1367,10 @@ F 3 "" H 1600 1450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Polyfuse_Small F?
+L Device:Polyfuse_Small F1
 U 1 1 6070BEAF
 P 1200 1050
-F 0 "F?" V 1300 1050 50  0000 C CNN
+F 0 "F1" V 1300 1050 50  0000 C CNN
 F 1 "250mA" V 1100 1050 50  0000 C CNN
 F 2 "" H 1250 850 50  0001 L CNN
 F 3 "~" H 1200 1050 50  0001 C CNN
@@ -1389,10 +1389,10 @@ F 3 "" H 900 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky_Small D?
+L Device:D_Schottky_Small D1
 U 1 1 608E7448
 P 2250 850
-F 0 "D?" V 2300 650 50  0000 L CNN
+F 0 "D1" V 2300 650 50  0000 L CNN
 F 1 "B5819W" V 2200 500 50  0000 L CNN
 F 2 "" V 2250 850 50  0001 C CNN
 F 3 "~" V 2250 850 50  0001 C CNN
@@ -1464,6 +1464,56 @@ Text GLabel 10200 5000 2    25   Input ~ 0
 USB_D+
 Text Notes 10450 6200 2    25   ~ 0
 Any discharge would be dissipated across the diodes. 
-Text Notes 7750 2100 0    60   ~ 0
-Connectors
+Text Notes 5800 2100 0    60   ~ 0
+Connectors and USB
+$Comp
+L Device:LED_Small D3
+U 1 1 609BFD3E
+P 10800 1050
+F 0 "D3" V 10900 950 50  0000 R CNN
+F 1 "RED" V 10800 950 50  0000 R CNN
+F 2 "" V 10800 1050 50  0001 C CNN
+F 3 "~" V 10800 1050 50  0001 C CNN
+	1    10800 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609BFD44
+P 10800 1550
+F 0 "#PWR?" H 10800 1300 50  0001 C CNN
+F 1 "GND" H 10800 1400 50  0000 C CNN
+F 2 "" H 10800 1550 50  0001 C CNN
+F 3 "" H 10800 1550 50  0001 C CNN
+	1    10800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 609BFD4A
+P 10800 1300
+F 0 "R6" H 10700 1250 50  0000 C CNN
+F 1 "1k" H 10700 1350 50  0000 C CNN
+F 2 "" H 10800 1300 50  0001 C CNN
+F 3 "~" H 10800 1300 50  0001 C CNN
+	1    10800 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10800 1400 10800 1550
+Wire Wire Line
+	10800 1200 10800 1150
+$Comp
+L power:+3V3 #PWR?
+U 1 1 609C694B
+P 10800 750
+F 0 "#PWR?" H 10800 600 50  0001 C CNN
+F 1 "+3V3" H 10800 900 50  0000 C CNN
+F 2 "" H 10800 750 50  0001 C CNN
+F 3 "" H 10800 750 50  0001 C CNN
+	1    10800 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 750  10800 950 
 $EndSCHEMATC
