@@ -679,270 +679,267 @@ Wire Wire Line
 	900  6050 950  6050
 Text Notes 500  7200 0    20   ~ 0
 A blue LED typically has a forward voltage drop of 3V. \nThe I/O pin will supply 3.3V, 3.0V will drop across the led, \nusing remaining 0.3V we can calculate the limiting resistor \nbased on how much current we want to supply for the LED.
-Text GLabel 5300 1000 0    25   Input ~ 0
+Text GLabel 5700 950  0    25   Input ~ 0
 BUCK_IN
-Text GLabel 5300 1150 0    25   Input ~ 0
+Text GLabel 5700 1100 0    25   Input ~ 0
 BUCK_EN
-Text GLabel 6000 1000 2    25   Input ~ 0
+Text GLabel 6400 950  2    25   Input ~ 0
 BUCK_BST
-Text GLabel 6000 1150 2    25   Input ~ 0
+Text GLabel 6400 1100 2    25   Input ~ 0
 BUCK_SW
-Text GLabel 6000 1300 2    25   Input ~ 0
+Text GLabel 6400 1250 2    25   Input ~ 0
 BUCK_FB
 $Comp
 L power:GND #PWR0116
 U 1 1 60706D9C
-P 5650 1700
-F 0 "#PWR0116" H 5650 1450 50  0001 C CNN
-F 1 "GND" H 5650 1550 50  0000 C CNN
-F 2 "" H 5650 1700 50  0001 C CNN
-F 3 "" H 5650 1700 50  0001 C CNN
-	1    5650 1700
+P 6050 1650
+F 0 "#PWR0116" H 6050 1400 50  0001 C CNN
+F 1 "GND" H 6050 1500 50  0000 C CNN
+F 2 "" H 6050 1650 50  0001 C CNN
+F 3 "" H 6050 1650 50  0001 C CNN
+	1    6050 1650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 1700 5650 1650
+	6050 1650 6050 1600
 $Comp
 L JunaidKhanKiCADLibrary:MP2359DJ-LF-Z U1
 U 1 1 60703211
-P 6200 550
-F 0 "U1" H 5850 250 50  0000 C CNN
-F 1 "MP2359DJ-LF-Z" H 6000 -500 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6950 500 500 0001 C CNN
-F 3 "" H 6950 500 500 0001 C CNN
-	1    6200 550 
+P 6600 500
+F 0 "U1" H 6250 200 50  0000 C CNN
+F 1 "MP2359DJ-LF-Z" H 6400 -550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7350 450 500 0001 C CNN
+F 3 "" H 7350 450 500 0001 C CNN
+	1    6600 500 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB1
 U 1 1 607283EA
-P 2850 1050
-F 0 "FB1" V 3000 1050 50  0000 C CNN
-F 1 "600 @ 600MHz" V 2750 1000 25  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" V 2780 1050 50  0001 C CNN
-F 3 "~" H 2850 1050 50  0001 C CNN
-	1    2850 1050
+P 3050 1050
+F 0 "FB1" V 3200 1050 50  0000 C CNN
+F 1 "600 @ 600MHz" V 2950 1000 25  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 2980 1050 50  0001 C CNN
+F 3 "~" H 3050 1050 50  0001 C CNN
+	1    3050 1050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 607304BE
-P 3400 1250
-F 0 "C1" H 3550 1350 50  0000 L CNN
-F 1 "10u" H 3550 1250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3400 1250 50  0001 C CNN
-F 3 "~" H 3400 1250 50  0001 C CNN
-	1    3400 1250
+P 3450 1250
+F 0 "C1" H 3600 1350 50  0000 L CNN
+F 1 "10u" H 3600 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3450 1250 50  0001 C CNN
+F 3 "~" H 3450 1250 50  0001 C CNN
+	1    3450 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 1050 3400 1150
+	3450 1050 3450 1150
 $Comp
 L power:GND #PWR0117
 U 1 1 60733C86
-P 3400 1450
-F 0 "#PWR0117" H 3400 1200 50  0001 C CNN
-F 1 "GND" H 3400 1300 50  0000 C CNN
-F 2 "" H 3400 1450 50  0001 C CNN
-F 3 "" H 3400 1450 50  0001 C CNN
-	1    3400 1450
+P 3450 1500
+F 0 "#PWR0117" H 3450 1250 50  0001 C CNN
+F 1 "GND" H 3450 1350 50  0000 C CNN
+F 2 "" H 3450 1500 50  0001 C CNN
+F 3 "" H 3450 1500 50  0001 C CNN
+	1    3450 1500
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 1350 3400 1450
 Text Notes 3000 1900 0    25   ~ 0
 The 10uF capacitor is a bulk \ninput decoupling capacitor, as \nper the datasheet recommendation of \nof the Buck Converter MP2359DJ-LF-Z
-Text GLabel 3650 1050 2    25   Input ~ 0
+Text GLabel 3700 1050 2    25   Input ~ 0
 BUCK_IN
 Wire Wire Line
-	3650 1050 3400 1050
-Connection ~ 3400 1050
+	3700 1050 3450 1050
 $Comp
 L Device:R_Small R1
 U 1 1 6074641D
-P 4400 850
-F 0 "R1" H 4300 800 50  0000 R CNN
-F 1 "100k" H 4300 900 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4400 850 50  0001 C CNN
-F 3 "~" H 4400 850 50  0001 C CNN
-	1    4400 850 
+P 4850 900
+F 0 "R1" H 4750 850 50  0000 R CNN
+F 1 "100k" H 4750 950 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4850 900 50  0001 C CNN
+F 3 "~" H 4850 900 50  0001 C CNN
+	1    4850 900 
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 60746A3A
-P 4400 1150
-F 0 "R2" H 4300 1100 50  0000 R CNN
-F 1 "68k" H 4300 1200 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4400 1150 50  0001 C CNN
-F 3 "~" H 4400 1150 50  0001 C CNN
-	1    4400 1150
+P 4850 1200
+F 0 "R2" H 4750 1150 50  0000 R CNN
+F 1 "68k" H 4750 1250 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4850 1200 50  0001 C CNN
+F 3 "~" H 4850 1200 50  0001 C CNN
+	1    4850 1200
 	-1   0    0    1   
 $EndComp
-Text GLabel 4100 600  0    25   Input ~ 0
+Text GLabel 4550 650  0    25   Input ~ 0
 BUCK_IN
 Wire Wire Line
-	4100 600  4400 600 
+	4550 650  4850 650 
 Wire Wire Line
-	4400 600  4400 750 
+	4850 650  4850 800 
 $Comp
 L power:GND #PWR0118
 U 1 1 6074CAF7
-P 4400 1350
-F 0 "#PWR0118" H 4400 1100 50  0001 C CNN
-F 1 "GND" H 4400 1200 50  0000 C CNN
-F 2 "" H 4400 1350 50  0001 C CNN
-F 3 "" H 4400 1350 50  0001 C CNN
-	1    4400 1350
+P 4850 1400
+F 0 "#PWR0118" H 4850 1150 50  0001 C CNN
+F 1 "GND" H 4850 1250 50  0000 C CNN
+F 2 "" H 4850 1400 50  0001 C CNN
+F 3 "" H 4850 1400 50  0001 C CNN
+	1    4850 1400
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 950  4400 1000
+	4850 1000 4850 1050
 Wire Wire Line
-	4400 1250 4400 1350
-Text GLabel 4800 1000 2    25   Input ~ 0
+	4850 1300 4850 1400
+Text GLabel 5250 1050 2    25   Input ~ 0
 BUCK_EN
 Wire Wire Line
-	4800 1000 4400 1000
-Connection ~ 4400 1000
+	5250 1050 4850 1050
+Connection ~ 4850 1050
 Wire Wire Line
-	4400 1000 4400 1050
-Text Notes 4150 1850 0    25   ~ 0
+	4850 1050 4850 1100
+Text Notes 4600 1900 0    25   ~ 0
 The enable pin requires a min of 1.2V to turn on. \nThe enable pin will fry if the voltage is greater \nthan 6V, can’t feed the 12V BUCK_IN. \nSo, the voltage divider ensures the voltage \nafter 100k resistor is less than 6V, protecting \nthe pin as well as providing above min needed. 
 $Comp
 L Device:C_Small C2
 U 1 1 607633B5
-P 6750 1350
-F 0 "C2" V 6900 1350 50  0000 C CNN
-F 1 "10n" V 6600 1350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6750 1350 50  0001 C CNN
-F 3 "~" H 6750 1350 50  0001 C CNN
-	1    6750 1350
+P 7150 1400
+F 0 "C2" V 7300 1400 50  0000 C CNN
+F 1 "10n" V 7000 1400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7150 1400 50  0001 C CNN
+F 3 "~" H 7150 1400 50  0001 C CNN
+	1    7150 1400
 	0    -1   -1   0   
 $EndComp
-Text GLabel 6650 1350 0    25   Input ~ 0
+Text GLabel 7050 1400 0    25   Input ~ 0
 BUCK_BST
-Text GLabel 6850 1350 2    25   Input ~ 0
+Text GLabel 7250 1400 2    25   Input ~ 0
 BUCK_SW
-Text Notes 6450 1100 0    25   ~ 0
+Text Notes 6650 1150 0    25   ~ 0
 Booststrap capacitance between the Boost pin \nand the switch. Its from the datasheet \nof the buck converter.
-Text GLabel 7700 800  0    25   Input ~ 0
+Text GLabel 7900 850  0    25   Input ~ 0
 BUCK_SW
 $Comp
 L Device:D_Schottky_Small D2
 U 1 1 607650EC
-P 7850 1000
-F 0 "D2" V 7800 1100 50  0000 L CNN
-F 1 "B5819W" V 7900 1100 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 7850 1000 50  0001 C CNN
-F 3 "~" V 7850 1000 50  0001 C CNN
-	1    7850 1000
+P 8050 1050
+F 0 "D2" V 8000 1150 50  0000 L CNN
+F 1 "B5819W" V 8100 1150 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 8050 1050 50  0001 C CNN
+F 3 "~" V 8050 1050 50  0001 C CNN
+	1    8050 1050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7700 800  7850 800 
+	7900 850  8050 850 
 Wire Wire Line
-	7850 800  7850 900 
+	8050 850  8050 950 
 $Comp
 L power:GND #PWR0119
 U 1 1 60769940
-P 7850 1200
-F 0 "#PWR0119" H 7850 950 50  0001 C CNN
-F 1 "GND" H 7850 1050 50  0000 C CNN
-F 2 "" H 7850 1200 50  0001 C CNN
-F 3 "" H 7850 1200 50  0001 C CNN
-	1    7850 1200
+P 8050 1250
+F 0 "#PWR0119" H 8050 1000 50  0001 C CNN
+F 1 "GND" H 8050 1100 50  0000 C CNN
+F 2 "" H 8050 1250 50  0001 C CNN
+F 3 "" H 8050 1250 50  0001 C CNN
+	1    8050 1250
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 1100 7850 1200
+	8050 1150 8050 1250
 $Comp
 L Device:L_Small L1
 U 1 1 6076D528
-P 8300 800
-F 0 "L1" V 8400 800 50  0000 C CNN
-F 1 "10u" V 8200 800 50  0000 C CNN
-F 2 "Inductor_SMD:L_Sunlord_MWSA0518_5.4x5.2mm" H 8300 800 50  0001 C CNN
-F 3 "~" H 8300 800 50  0001 C CNN
-	1    8300 800 
+P 8500 850
+F 0 "L1" V 8600 850 50  0000 C CNN
+F 1 "10u" V 8400 850 50  0000 C CNN
+F 2 "Inductor_SMD:L_Sunlord_MWSA0518_5.4x5.2mm" H 8500 850 50  0001 C CNN
+F 3 "~" H 8500 850 50  0001 C CNN
+	1    8500 850 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7850 800  8200 800 
-Connection ~ 7850 800 
+	8050 850  8400 850 
+Connection ~ 8050 850 
 $Comp
 L Device:C_Small C3
 U 1 1 60770683
-P 8550 1000
-F 0 "C3" H 8650 1050 50  0000 L CNN
-F 1 "10u" H 8650 950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 8550 1000 50  0001 C CNN
-F 3 "~" H 8550 1000 50  0001 C CNN
-	1    8550 1000
+P 8750 1050
+F 0 "C3" H 8850 1100 50  0000 L CNN
+F 1 "10u" H 8850 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8750 1050 50  0001 C CNN
+F 3 "~" H 8750 1050 50  0001 C CNN
+	1    8750 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 800  8550 800 
+	8600 850  8750 850 
 Wire Wire Line
-	8550 800  8550 900 
+	8750 850  8750 950 
 $Comp
 L power:GND #PWR0120
 U 1 1 607745CF
-P 8550 1200
-F 0 "#PWR0120" H 8550 950 50  0001 C CNN
-F 1 "GND" H 8550 1050 50  0000 C CNN
-F 2 "" H 8550 1200 50  0001 C CNN
-F 3 "" H 8550 1200 50  0001 C CNN
-	1    8550 1200
+P 8750 1250
+F 0 "#PWR0120" H 8750 1000 50  0001 C CNN
+F 1 "GND" H 8750 1100 50  0000 C CNN
+F 2 "" H 8750 1250 50  0001 C CNN
+F 3 "" H 8750 1250 50  0001 C CNN
+	1    8750 1250
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 1100 8550 1200
+	8750 1150 8750 1250
 $Comp
 L Device:C_Small C4
 U 1 1 6077794C
-P 8950 1000
-F 0 "C4" H 9050 1050 50  0000 L CNN
-F 1 "10u" H 9050 950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 8950 1000 50  0001 C CNN
-F 3 "~" H 8950 1000 50  0001 C CNN
-	1    8950 1000
+P 9150 1050
+F 0 "C4" H 9250 1100 50  0000 L CNN
+F 1 "10u" H 9250 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9150 1050 50  0001 C CNN
+F 3 "~" H 9150 1050 50  0001 C CNN
+	1    9150 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 60777E4F
-P 8950 1200
-F 0 "#PWR0121" H 8950 950 50  0001 C CNN
-F 1 "GND" H 8950 1050 50  0000 C CNN
-F 2 "" H 8950 1200 50  0001 C CNN
-F 3 "" H 8950 1200 50  0001 C CNN
-	1    8950 1200
+P 9150 1250
+F 0 "#PWR0121" H 9150 1000 50  0001 C CNN
+F 1 "GND" H 9150 1100 50  0000 C CNN
+F 2 "" H 9150 1250 50  0001 C CNN
+F 3 "" H 9150 1250 50  0001 C CNN
+	1    9150 1250
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 800  8950 800 
+	8750 850  9150 850 
 Wire Wire Line
-	8950 800  8950 900 
-Connection ~ 8550 800 
+	9150 850  9150 950 
+Connection ~ 8750 850 
 Wire Wire Line
-	8950 1100 8950 1200
-Text Notes 7550 1750 0    25   ~ 0
+	9150 1150 9150 1250
+Text Notes 7750 1800 0    25   ~ 0
 The inductor and output capacitor \nare calculated using the equation \nin the datasheet for the buck \nconverter. \n\nDatasheet recommended 1 output capacitor, \nadded two to achieve lower ESR.
 $Comp
 L power:+3V3 #PWR0122
 U 1 1 607831D8
-P 8950 750
-F 0 "#PWR0122" H 8950 600 50  0001 C CNN
-F 1 "+3V3" H 8950 900 50  0000 C CNN
-F 2 "" H 8950 750 50  0001 C CNN
-F 3 "" H 8950 750 50  0001 C CNN
-	1    8950 750 
+P 9150 800
+F 0 "#PWR0122" H 9150 650 50  0001 C CNN
+F 1 "+3V3" H 9150 950 50  0000 C CNN
+F 2 "" H 9150 800 50  0001 C CNN
+F 3 "" H 9150 800 50  0001 C CNN
+	1    9150 800 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 750  8950 800 
-Connection ~ 8950 800 
+	9150 800  9150 850 
+Connection ~ 9150 850 
 $Comp
 L Device:R_Small R3
 U 1 1 60787E7D
@@ -1335,8 +1332,6 @@ Wire Wire Line
 Wire Wire Line
 	7050 5000 7000 5000
 Wire Wire Line
-	900  1050 1100 1050
-Wire Wire Line
 	900  1000 900  1050
 $Comp
 L Transistor_FET:AO3401A Q1
@@ -1349,10 +1344,6 @@ F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 1600 1150 50  0001 L CNN
 	1    1600 1150
 	0    -1   -1   0   
 $EndComp
-Text Notes 600  1900 0    25   ~ 0
-The 12V is fused and AO3401A is a \np-channel mosfet, is a low-power lost \nsolution to reverse polarity check. \n\nYou can achieve reverse polarity protection \nwith a diode, a schottky diode, but \nthis has a large power loss in comparison to \nthe p-channel mosfet solution. \n\nThe Ferret Bead essentially is \na resistor at High Frequency, \n(you can think of it as an Inductor). \n\nThe Ferret bead is added for \naddition power supply filtering. \n
-Wire Wire Line
-	1300 1050 1400 1050
 Wire Wire Line
 	1600 1350 1600 1450
 $Comp
@@ -1369,12 +1360,12 @@ $EndComp
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 6070BEAF
-P 1200 1050
-F 0 "F1" V 1300 1050 50  0000 C CNN
-F 1 "250mA" V 1100 1050 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 1250 850 50  0001 L CNN
-F 3 "~" H 1200 1050 50  0001 C CNN
-	1    1200 1050
+P 2500 1050
+F 0 "F1" V 2600 1050 50  0000 C CNN
+F 1 "250mA" V 2400 1050 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 2550 850 50  0001 L CNN
+F 3 "~" H 2500 1050 50  0001 C CNN
+	1    2500 1050
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1391,38 +1382,31 @@ $EndComp
 $Comp
 L Device:D_Schottky_Small D1
 U 1 1 608E7448
-P 2250 850
-F 0 "D1" V 2300 650 50  0000 L CNN
-F 1 "B5819W" V 2200 500 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 2250 850 50  0001 C CNN
-F 3 "~" V 2250 850 50  0001 C CNN
-	1    2250 850 
+P 1950 850
+F 0 "D1" V 2000 650 50  0000 L CNN
+F 1 "B5819W" V 1900 500 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 1950 850 50  0001 C CNN
+F 3 "~" V 1950 850 50  0001 C CNN
+	1    1950 850 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2950 1050 3400 1050
-Wire Wire Line
-	2250 950  2250 1050
+	1950 950  1950 1050
 $Comp
 L power:+5V #PWR0139
 U 1 1 6090AF68
-P 2250 700
-F 0 "#PWR0139" H 2250 550 50  0001 C CNN
-F 1 "+5V" H 2250 850 50  0000 C CNN
-F 2 "" H 2250 700 50  0001 C CNN
-F 3 "" H 2250 700 50  0001 C CNN
-	1    2250 700 
+P 1950 700
+F 0 "#PWR0139" H 1950 550 50  0001 C CNN
+F 1 "+5V" H 1950 850 50  0000 C CNN
+F 2 "" H 1950 700 50  0001 C CNN
+F 3 "" H 1950 700 50  0001 C CNN
+	1    1950 700 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 700  2250 750 
-Text Notes 1800 1750 0    25   ~ 0
+	1950 700  1950 750 
+Text Notes 1700 1900 0    25   ~ 0
 The schottky diode here allows the board, \nto be either powered by the USB cable or \nthe 12V supply. \nBasically, acts as an OR gate, \nif the 12V is connected, then this diode\nwill be reverse biased, meaning the 12V is supplying\nthe baord. If 12V not present, then this diode is \nforward biased, i.e. USB is powering the board. \n\nProtects the board in case when both 12V \nand the USB is connected. 
-Wire Wire Line
-	1800 1050 2250 1050
-Wire Wire Line
-	2250 1050 2750 1050
-Connection ~ 2250 1050
 NoConn ~ 7000 5400
 Text Notes 7050 5450 0    25   ~ 0
 USB not being used as a HOST, \nso don’t need this ID pin. 
@@ -1590,4 +1574,20 @@ Wire Wire Line
 Connection ~ 10000 3600
 Wire Wire Line
 	10000 3600 10000 3950
+Wire Wire Line
+	900  1050 1400 1050
+Text Notes 600  1850 0    25   ~ 0
+The 12V is fused and AO3401A is a \np-channel mosfet, is a low-power lost \nsolution to reverse polarity check. \n\nYou can achieve reverse polarity protection \nwith a diode, a schottky diode, but \nthis has a large power loss in comparison to \nthe p-channel mosfet solution. \n\nThe Ferret Bead essentially is \na resistor at High Frequency, \n(you can think of it as an Inductor). \n\nThe Ferret bead is added for \naddition power supply filtering. \n
+Wire Wire Line
+	1950 1050 1800 1050
+Wire Wire Line
+	2400 1050 1950 1050
+Connection ~ 1950 1050
+Wire Wire Line
+	3450 1350 3450 1500
+Wire Wire Line
+	2600 1050 2950 1050
+Wire Wire Line
+	3150 1050 3450 1050
+Connection ~ 3450 1050
 $EndSCHEMATC
